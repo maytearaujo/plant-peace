@@ -7,11 +7,11 @@ import './index.css'
 function App() {
 
   return (
-    <>
+    <div className="bg-white text-primaryLunarGreen">
       <Header />
       <Routes />
       <Footer />
-    </>
+    </div>
   )
 }
 

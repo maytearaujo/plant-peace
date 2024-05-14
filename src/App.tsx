@@ -1,24 +1,14 @@
-
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-
-// import './App.css'
-
-
-import Main from "./routes/Main"
-
-// import './index.css'
-
+import Footer from "./components/Footer"
+import Header from "./components/Header"
+import Routes from "./routes/routes"
 
 function App() {
 
   return (
     <>
-      <BrowserRouter >
-        <Routes>
-          <Route path="/" element={<Main />} />
-        </Routes>
-      </BrowserRouter>
-
+      <Header />
+      <Routes />
+      <Footer />
     </>
   )
 }

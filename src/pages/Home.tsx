@@ -24,10 +24,10 @@ const Home = () => {
         </div>
 
         <div className='lg:flex lg:flex-row'>
-          <div className= 'md:px-52 md:mt-16'>
+          <div className='md:px-52 md:mt-16'>
             <div className='flex flex-col justify-center items-center md:items-start px-16 md:flex-row'>
-            <img className='mb-6 md:mr-16 lg:mr-20 lg:ml-28' src="/src/assets/home/2steps/Rectangle 32.png" alt="plants" />
-            <img className='lg:mr-14' src="/src/assets/home/2steps/Rectangle 33.png" alt="plants" />
+              <img className='mb-6 md:mr-16 lg:mr-20 lg:ml-28' src="/src/assets/home/2steps/Rectangle 32.png" alt="plants" />
+              <img className='lg:mr-14' src="/src/assets/home/2steps/Rectangle 33.png" alt="plants" />
             </div>
           </div>
 
@@ -39,7 +39,6 @@ const Home = () => {
         </div>
 
       </div>
-
     </div>
   )
 }

@@ -35,6 +35,9 @@ export default {
         wisper: "#F0F1EE", //background
         bgFooter: "#354733",
       },
+      screens: {
+        "xl": "1535px",
+      },
     },
   },
   plugins: [],

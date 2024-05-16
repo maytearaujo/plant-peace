@@ -11,38 +11,36 @@ const Home = () => {
   return (
     <div className="bg-white w-screen">
 
-      <div className='flex flex-col items-center justify-center '>
-        <div className='text-center mb-8'>
-          <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>steps to take care of your <span className='text-primaryAvacado'>plants</span></h1>
-          <p className='mt-2 px-4 text-darkGray text-16'>By following these three steps - proper watering, appropriate sunlight, and providing essential nutrients - you'll be well on your way to <span className='flex flex-row text-center justify-center'>maintaining healthy and thriving plants.</span></p>
-        </div>
-
-        <div className='flex flex-col md:flex-row md:justify-center md:space-x-10 lg:space-x-20 my-10 md:my-0 mx-24'>
-          {cardsData.map((card, index) => (
-            <CardHome key={index} cardData={card} />
-          ))}
-        </div>
-
-        <div className='lg:flex lg:flex-row'>
-          <div className='md:px-52 md:mt-16'>
-            <div className='flex flex-col justify-center items-center md:items-start px-16 md:flex-row'>
-              <img className='mb-6 md:mr-16 lg:mr-20 lg:ml-28' src="/src/assets/home/2steps/Rectangle 32.png" alt="plants" />
-              <img className='lg:mr-14' src="/src/assets/home/2steps/Rectangle 33.png" alt="plants" />
-            </div>
-          </div>
-
-          <div className='flex flex-col px-16 pt-10 lg:pt-16 lg:w-1/2'>
-            <img className='justify-center items-center' src="/src/assets/home/2steps/Rectangle 34.png" alt="plants" />
-            <p className='mt-4 mb-6 text-secondarySecondary'>Our website offers a wide array of stunning plants, ranging from vibrant flowers to lush indoor foliage, allowing you to create your very own green oasis. In addition to our extensive plant selection, we also provide gardening kits and fertilizers to equip you with everything you need to nurture your plants and achieve gardening success. But we don't stop there! We believe that knowledge is the key to a thriving garden, so we offer a wealth of information and resources on gardening techniques, plant care tips, and landscaping ideas. Whether you're a seasoned gardener or just starting your green journey, our goal is to inspire and support you every step of the way. Get ready to explore our virtual garden and discover the joys of gardening with us!</p>
-
-            <Button>
-              <p>See more photos</p>
-            </Button>
-          </div>
-        </div>
-
+    <div className='flex flex-col items-center justify-center '>
+      <div className='text-center mb-8'>
+        <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize px-2 '>steps to take care of your <span className='text-primaryAvacado'>plants</span></h1>
+        <p className='mt-2 px-4 md:px-4 text-darkGray text-16'>By following these three steps - proper watering, appropriate sunlight, and providing essential nutrients - you'll be well on your way to <span className='flex flex-row text-center justify-center'>maintaining healthy and thriving plants.</span></p>
       </div>
+
+      <div className='flex flex-col md:flex-row md:justify-center md:space-x-10 lg:space-x-20 my-10 md:my-0 mx-24'>
+        {cardsData.map((card, index) => (
+          <CardHome key={index} cardData={card} />
+        ))}
+      </div>
+
+      <div className='lg:transform lg:scale-90 flex flex-col md:flex-row md:justify-center  my-10 md:my-0 mx-24 pt-10 lg:pt-16 md:transform md:scale-50'>
+        <img className=' mb-6 lg:mb-0 md:mb-0 md:mr-16 lg:mr-0' src="/src/assets/home/2steps/Rectangle 32.png" alt="plants" />
+        <img className='lg:ml-[100px]' src="/src/assets/home/2steps/Rectangle 33.png" alt="plants" />
+
+        <div className='flex flex-col pt-10 lg:pt-0 lg:ml-[100px] md:ml-[100px]'>
+          <img className=' justify-center items-center' src="/src/assets/home/2steps/Rectangle 34.png" alt="plants" />
+          <p className='mt-[32px] mb-[32px] text-secondarySecondary md:w-[452px] lg:w-[452px]'>Our website offers a wide array of stunning plants, ranging from vibrant flowers to lush indoor foliage, allowing you to create your very own green oasis. In addition to our extensive plant selection, we also provide gardening kits and fertilizers to equip you with everything you need to nurture your plants and achieve gardening success. But we don't stop there! We believe that knowledge is the key to a thriving garden, so we offer a wealth of information and resources on gardening techniques, plant care tips, and landscaping ideas. Whether you're a seasoned gardener or just starting your green journey, our goal is to inspire and support you every step of the way. Get ready to explore our virtual garden and discover the joys of gardening with us!</p>
+
+          <Button>
+            <p>See more photos</p>
+          </Button>
+        </div>
+      </div>
+
     </div>
+  </div>
+
+       
   )
 }
 

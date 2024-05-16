@@ -1,7 +1,6 @@
 import Logo from "../assets/navbar/logo.png"
 import LogoUser from "../assets/navbar/logoUser.png"
 
-
 const Header = () => {
   return (
     <div className="flex justify-around h-20 items-center">
@@ -15,7 +14,7 @@ const Header = () => {
           <li><a href="#">Home</a></li>
           <li><a href="#">Register</a></li>
           <li><a href="#">Poducts</a></li>
-          <li><a href="#">About us</a></li>
+          <li><a href="/about">About us</a></li>
         </ul>
       </nav>
       <a href="#">

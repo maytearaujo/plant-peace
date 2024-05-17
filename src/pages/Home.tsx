@@ -1,5 +1,7 @@
 import Button from '../components/Button';
 import CardHome from '../components/CardHome';
+import MostPopular from '../components/MostPopular';
+import InSale from '../components/InSale';
 
 const Home = () => {
   const cardsData = [
@@ -34,12 +36,23 @@ const Home = () => {
           <div className='flex flex-col px-16 pt-10 lg:pt-16 lg:w-1/2'>
             <img className='justify-center items-center' src="/src/assets/home/2steps/Rectangle 34.png" alt="plants" />
             <p className='mt-4 mb-6 text-secondarySecondary'>Our website offers a wide array of stunning plants, ranging from vibrant flowers to lush indoor foliage, allowing you to create your very own green oasis. In addition to our extensive plant selection, we also provide gardening kits and fertilizers to equip you with everything you need to nurture your plants and achieve gardening success. But we don't stop there! We believe that knowledge is the key to a thriving garden, so we offer a wealth of information and resources on gardening techniques, plant care tips, and landscaping ideas. Whether you're a seasoned gardener or just starting your green journey, our goal is to inspire and support you every step of the way. Get ready to explore our virtual garden and discover the joys of gardening with us!</p>
-            <Button label='See more photos' />
+            <Button>
+              <span> See more photos </span>
+              </Button>
           </div>
         </div>
 
       </div>
-    </div>
+
+
+        <div>
+        <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>This weeks most popular<span className='text-primaryAvacado'>and best selling</span></h1>
+        <MostPopular/>
+        <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>Plants<span className='text-primaryAvacado'>in sale</span></h1>
+        </div>
+
+</div>
+
   )
 }
 

@@ -11,7 +11,7 @@ const Header = () => {
 
       <nav className="w-5/12 h-20 ">
         <ul className="flex flex-row justify-evenly items-center h-full">
-          <li><a href="#">Home</a></li>
+          <li><a href="/">Home</a></li>
           <li><a href="#">Register</a></li>
           <li><a href="#">Poducts</a></li>
           <li><a href="/about">About us</a></li>

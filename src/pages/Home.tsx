@@ -4,7 +4,7 @@ import StepsHome from '../components/StepsHome';
 const Home = () => {
 
   return (
-    <div className="bg-wisper w-screen">
+    <div className="w-screen">
       <Hero />
       <StepsHome />
     </div>

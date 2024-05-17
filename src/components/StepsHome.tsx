@@ -11,7 +11,7 @@ const StepsHome = () => {
       
   return (
     <div>
-      <div className='flex flex-col items-center justify-center pt-24 pb-24'>
+      <div className='flex flex-col bg-white items-center justify-center pt-24 pb-24'>
         <div className='text-center mb-8'>
           <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize px-2'>steps to take care of your <span className='text-primaryAvacado'>plants</span></h1>
           <p className='mt-2 px-4 md:px-4 text-darkGray text-16'>By following these three steps - proper watering, appropriate sunlight, and providing essential nutrients - you'll be well on your way to <span className='flex flex-row text-center justify-center'>maintaining healthy and thriving plants.</span></p>
@@ -21,6 +21,7 @@ const StepsHome = () => {
           {cardsData.map((card, index) => (
             <CardHome key={index} cardData={card} />
           ))}
+          
 
         </div>
 

@@ -3,9 +3,9 @@ import LogoUser from "../assets/navbar/logoUser.png"
 
 const Header = () => {
   return (
-    <div className="flex justify-around h-20 items-center">
+    <div className="flex justify-around items-center h-20 bg-white">
 
-      <a href="/Home" target="_">
+      <a href="/" target="_self">
         <img src={Logo} alt="Logo Plant Peace" />
       </a>
 
@@ -20,6 +20,7 @@ const Header = () => {
       <a href="#">
         <img src={LogoUser} alt="Logo Usuário" />
       </a>
+
     </div>
   )
 }

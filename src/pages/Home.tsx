@@ -1,5 +1,6 @@
 import Button from '../components/Button';
 import CardHome from '../components/CardHome';
+import Hero from '../components/Hero';
 
 const Home = () => {
   const cardsData = [
@@ -10,7 +11,7 @@ const Home = () => {
 
   return (
     <div className="bg-wisper w-screen">
-
+      <Hero />
       <div className='flex flex-col items-center justify-center '>
         <div className='text-center mb-8'>
           <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize px-2 '>steps to take care of your <span className='text-primaryAvacado'>plants</span></h1>

@@ -1,5 +1,5 @@
 import Logo from "../assets/navbar/logo.png"
-import LogoUser from "../assets/navbar/logoUser.png"
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 const Header = () => {
   return (
@@ -17,9 +17,14 @@ const Header = () => {
           <li><a href="/about">About us</a></li>
         </ul>
       </nav>
-      <a href="#">
-        <img src={LogoUser} alt="Logo Usuário" />
-      </a>
+      <div>
+        <SignedOut>
+          <SignInButton />
+        </SignedOut>
+        <SignedIn>
+          <UserButton />
+        </SignedIn>
+      </div>
 
     </div>
   )

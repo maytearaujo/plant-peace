@@ -9,7 +9,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-white w-screen">
+    <div className="bg-wisper w-screen">
 
       <div className='flex flex-col items-center justify-center '>
         <div className='text-center mb-8'>

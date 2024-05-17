@@ -2,6 +2,8 @@ import Button from '../components/Button';
 import CardHome from '../components/CardHome';
 import MostPopular from '../components/MostPopular';
 import InSale from '../components/InSale';
+import Hero from '../components/Hero';
+import StepsHome from '../components/StepsHome';
 
 const Home = () => {
   const cardsData = [
@@ -10,7 +12,9 @@ const Home = () => {
     { image: "/src/assets/home/2steps/Ellipse 5.png", title: 'Nutrients and Fertilizing', subtitle: "Choose a suitable fertilizer based on the specific needs of your plants, whether it's a balanced or specialized formula." },
   ];
 
+
   return (
+    <>
     <div className="bg-white w-screen">
 
       <div className='flex flex-col items-center justify-center '>
@@ -53,6 +57,8 @@ const Home = () => {
 
 </div>
 
+
+    </>
   )
 }
 

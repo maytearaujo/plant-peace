@@ -9,13 +9,17 @@ export default {
         pacifico: "Pacifico",
         ebGaramond: "EB Garamond",
         lato: "Lato",
-        inter: "Inter", //Formulário
+        inter: "Inter",
       },
 
       fontSize: {
-        16: "1rem", // Tamanho 16
-        24: "1.5rem", // Tamanho 24
-        64: "4rem", // Tamanho 64
+        12: "0.75rem",
+        14: "0.875rem",
+        16: "1rem",
+        20: "1.25rem",
+        24: "1.5rem",
+        50: "3.125rem",
+        64: "4rem",
       },
 
       colors: {
@@ -31,9 +35,11 @@ export default {
         athenaGrey: "#F8F9FB",
         wisper: "#F0F1EE", //background
         bgFooter: "#354733",
+        cardAbout: "#D6EBDE",
+        bgAbout: "#567361",
       },
       screens: {
-        "xl": "1535px",
+        xl: "1535px",
       },
     },
   },

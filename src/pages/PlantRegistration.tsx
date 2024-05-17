@@ -92,9 +92,9 @@ function PlantRegistration() {
   };
 
   return (
-    <main className="h-full w-screen">
+    <main className="h-full w-screen flex justify-between">
 
-      <form className="ml-[50px] p-[50px] w-[572px] flex flex-col gap-9" onSubmit={handleSubmit}>
+      <form className="ml-[50px] px-[50px] pt-[50px] pb-[122px] w-[572px] flex flex-col gap-9" onSubmit={handleSubmit}>
         <div className="h-14 flex items-center border-b-[1px] border-[#AFB2AA]">
           <h1 className="mb-2 font-inter font-semibold text-2xl text-[#354733]">Plant Registration</h1>
         </div>
@@ -144,10 +144,12 @@ function PlantRegistration() {
           </div>
         </div>
 
-        <Button type={'submit'} border margin>
+        <Button type={'submit'} border margin width height>
           <span className="font-inter font-bold">Register</span>
         </Button>
       </form>
+
+      <img src="../../src/assets/home/1discover/image.png" className="mix-blend-luminosity" />
     </main>
   );
 }

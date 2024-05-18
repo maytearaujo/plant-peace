@@ -10,7 +10,7 @@ const Hero = () => {
         <div className="w-[80%] h-[100%] flex flex-col justify-evenly md:w-[70%]">
           <div className="flex flex-row items-center justify-around w-[60%] md:w-[30%]">
             <img src={Rectangle} alt="" className="w-8 h-[0.18rem]" />
-            <p className="text-black font-stylish text-[1.4rem]">Love for Nature</p>
+            <p className="text-black font-pacifico text-[1.4rem]">Love for Nature</p>
           </div>
 
           <section className="h-[100%] flex flex-col justify-evenly">

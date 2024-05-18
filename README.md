@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+<p align="center">
+  
+<img src="https://camo.githubusercontent.com/82291b0fe831bfc6781e07fc5090cbd0a8b912bb8b8d4fec0696c881834f81ac/68747470733a2f2f70726f626f742e6d656469612f394575424971676170492e676966" width="100%" height="2">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+</p>
+<div align="center">
+  
+![header](https://capsule-render.vercel.app/api?type=waving&height=250&color=4c9000&text=😄COMPASS+UOL😄&textBg=false&reversal=false&fontColor=ffffff
+)
 
-Currently, two official plugins are available:
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<div align="center">
+  
+  [![HTML](https://img.shields.io/badge/Feito%20com-HTML-76d40c)](#) 
+  [![Tailwindcss](https://img.shields.io/badge/Feito%20com-TailwindCSS-76d40c)](#) 
+  [![TS](https://img.shields.io/badge/Feito%20com-TypeScript-76d40c)](#) 
+  [![React](https://img.shields.io/badge/Feito%20com-React-76d40c)](#) 
+  
+</div>
+<p align="center">Bem-vindo(a) ao repositório do grupo JovemScript - Desafio da semana 8.</p>
+<p align="center">Projeto realizado durante o Programa de Bolsas da Compass UOL!</p> 
 
-## Expanding the ESLint configuration
+<br>
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Como abrir o projeto
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+## Visualização 
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+
+## Integrantes
+
+<p>Vitor Hugo Antunes Passos</p>
+<p>Maria Eduarda Cardoso da Silva</p>
+<p>Rebeca Ciriaca Santos</p>
+<p>Mayte Araujo de Sousa</p>
+<p>Alerrandra Gonsalves Sissa</p>
+
+<p align="center">
+  
+<img src="https://camo.githubusercontent.com/82291b0fe831bfc6781e07fc5090cbd0a8b912bb8b8d4fec0696c881834f81ac/68747470733a2f2f70726f626f742e6d656469612f394575424971676170492e676966" width="100%" height="2">
+</p>

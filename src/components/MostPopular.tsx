@@ -1,22 +1,20 @@
 import { useState, useEffect, useRef } from 'react'
 import '../../src/components/Popular.css'
 import { motion } from 'framer-motion'
- 
-import photo1 from '../../src/assets/home/3this/photo 1.png';
-import photo2 from '../../src/assets/home/3this/Photo 2.png';
-import photo3 from '../../src/assets/home/3this/Photo 3.png';
-import photo4 from '../../src/assets/home/3this/Photo 4.png';
-import photo5 from '../../src/assets/home/3this/Photo 4.png';
-import photo6 from '../../src/assets/home/3this/Photo 4.png';
-import photo7 from '../../src/assets/home/3this/Photo 4.png';
+import PlantsCard from '../components/PlantsCard';
+import { react } from 'react'
 
-
-const images = [photo1, photo2, photo3, photo4, photo5, photo6, photo7]
- 
 function MostPopular() {
+
+  const plantsCard = [0,1,2,3,0,1,2,3]
+
+
   const carrossel = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0)
+  useState()
  
+  
+
   useEffect(() => {
     let carrosselWidth = carrossel.current?.scrollWidth;
     if (carrosselWidth) {
@@ -27,11 +25,16 @@ function MostPopular() {
   return (
     <div className='Popular'>
       <motion.div ref={carrossel} className='carrossel' whileTap={{ cursor: "grabbing" }}>
-        <motion.div className='inner flex max-w-[900px]' drag='x' dragConstraints={{ right: 0 }}>
+        <motion.div className='inner flex max-w-[900px]' 
+        drag="x" 
+        dragConstraints={{ right: 0, left: -width}}
+        initial={{ x: 100}}
+        animate={{ x: 0}}
+        >
  
-          {images.map(image => (
-            <motion.div className="item" key={image}>
-              <img src={image} width="700px" alt="Plants" />
+          {plantsCard.map((image, index) => (
+            <motion.div className="item" key={(index)}>
+              <PlantsCard num={image}/>
             </motion.div>
  
           ))}

@@ -36,4 +36,4 @@ const PlantsCard =  (props) =>{
     )
 }
 
-export default InSale
+export default PlantsCard

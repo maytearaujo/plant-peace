@@ -6,14 +6,12 @@ import About from "../pages/About/About";
 
 const AppRoutes = () => {
   return (
-    <BrowserRouter>
-      <RouterRoutes>
-        <Route path="/" element={<Home />} />
-        <Route path="/product/:id" element={<Product />} />
-        <Route path="/plant-registration" element={<PlantRegistration />} />
-        <Route path="/about" element={<About />} />
-      </RouterRoutes>
-    </BrowserRouter>
+    <RouterRoutes>
+      <Route path="/" element={<Home />} />
+      <Route path="/product/:id" element={<Product />} />
+      <Route path="/plant-registration" element={<PlantRegistration />} />
+      <Route path="/about" element={<About />} />
+    </RouterRoutes>
   );
 };
 

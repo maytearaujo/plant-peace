@@ -8,11 +8,10 @@ function App() {
 
   return (
     <div className="bg-white text-primaryLunarGreen">
-      <Header /> 
-      <Routes /> 
-      <MostPopular/>
-      <Footer /> 
-     </div>
+      <Header />
+      <Routes />
+      <Footer />
+    </div>
 
   )
 }

@@ -10,8 +10,8 @@ function App() {
     <div className="bg-white text-primaryLunarGreen">
       <Header /> 
       <Routes /> 
-      <Footer /> 
       <MostPopular/>
+      <Footer /> 
      </div>
 
   )

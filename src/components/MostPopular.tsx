@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react'
 import '../../src/components/Popular.css'
 import { motion } from 'framer-motion'
 import PlantsCard from '../components/PlantsCard';
-import { react } from 'react'
+import { React } from 'react'
 
 function MostPopular() {
 

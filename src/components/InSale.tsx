@@ -22,13 +22,14 @@ const PlantsCard =  (props) =>{
         <Fragment>
             {list.lenght > 0 ? (
                 <Fragment>
-            <h1>Hello World</h1>
             <img src={images[props.num]} alt="Plants" />
-            <p>{list[props.num].name}</p>    
+            <p>{list[props.num].name}</p>  
+            <p>{list[props.num].price}</p> 
+            <p>{list[props.num].label}</p>  
             </Fragment>
  
             ): (
-                <p> Loading ...</p>
+                <p> Carregando Plantas</p>
             )  
             }
         </Fragment>

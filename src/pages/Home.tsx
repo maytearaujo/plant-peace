@@ -10,9 +10,7 @@ const Home = () => {
       <StepsHome />
       <MostPopular />
       <InSale />
-
     </div>
-
   )
 }
 

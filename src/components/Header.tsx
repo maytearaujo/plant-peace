@@ -6,7 +6,7 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false); 
 
   return (
-    <div className="bg-wisper flex justify-between py-8 md:justify-around items-center w-[100vw] h-20 ">
+    <div className="bg-wisper flex justify-between py-8 md:justify-around items-center w-[100vw] h-20 font-raleway font-normal text-lg text-primaryLunarGreen">
 
       <a href="/" target="_self">
         <img src={Logo} alt="Logo Plant Peace" />
@@ -22,7 +22,7 @@ const Header = () => {
             <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           </div>
 
-          <div className={isNavOpen ? "block absolute w-[100%] h-[100vh] top-0 left-0 bg-wisper z-10 flex flex-col justify-evenly items-center" : "hidden"}>
+          <div className={isNavOpen ? "absolute w-[100%] h-[100vh] top-0 left-0 bg-wisper z-10 flex flex-col justify-evenly items-center" : "hidden"}>
 
             <div
               className="CROSS-ICON absolute top-0 right-0 px-8 py-8"
@@ -42,22 +42,22 @@ const Header = () => {
               </svg>
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
-              <li className="my-8 uppercase text-primaryAvacado"><a href="/">Home</a></li>
-              <li className="my-8 uppercase"><a href="#">Register</a></li>
-              <li className="my-8 uppercase"><a href="#">Poducts</a></li>
-              <li className="my-8 uppercase"><a href="/about">About us</a></li>
-              <li className="my-8 uppercase hidden"><a href="#">Blog</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="/">Home</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="#">Register</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="#">Poducts</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="/about">About us</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado hidden"><a href="#">Blog</a></li>
             </ul>
           </div>
         </section>
 
       <section className="w-5/12 h-20 hidden md:flex">
-        <ul className="flex flex-row justify-around items-center w-[100%] h-full font-raleway font-normal text-primaryLunarGreen">
-          <li className="text-primaryAvacado"><a href="/">Home</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Poducts</a></li>
-          <li><a href="/about">About us</a></li>
-          <li className="hidden"><a href="#">Blog</a></li>
+        <ul className="flex flex-row justify-around items-center w-[100%] h-full">
+          <li className="hover:text-primaryAvacado"><a href="/">Home</a></li>
+          <li className="hover:text-primaryAvacado"><a href="#">Register</a></li>
+          <li className="hover:text-primaryAvacado"><a href="#">Poducts</a></li>
+          <li className="hover:text-primaryAvacado"><a href="/about">About us</a></li>
+          <li className="hidden hover:text-primaryAvacado"><a href="#">Blog</a></li>
         </ul>
       </section>
 

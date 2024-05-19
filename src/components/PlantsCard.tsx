@@ -2,7 +2,6 @@ import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -29,13 +28,12 @@ const PlantsCard = () => {
 
     return (
         <div className='flex items-center justify-center w-full'>
-            <div className='text-purple-400 text-3xl bold w-[50%] flex flex-col justify-evenly'>
-                <h1 className="text-center">Carousel de Imagens</h1>
+            <div className='w-[50%] flex flex-col justify-evenly'>
                 <div>
                     <Swiper 
                         modules={[Navigation, Pagination, Scrollbar, A11y]}
                         spaceBetween={5}
-                        slidesPerView={1}
+                        slidesPerView={4}
                         navigation
                         pagination={{ clickable: true }}
                         scrollbar={{ draggable: true }}

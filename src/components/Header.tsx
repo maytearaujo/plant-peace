@@ -1,5 +1,5 @@
 import Logo from "../assets/navbar/logo.png"
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
+// import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 
 const Header = () => {
   return (
@@ -17,14 +17,14 @@ const Header = () => {
           <li><a href="/about">About us</a></li>
         </ul>
       </nav>
-      <div>
+      {/* <div>
         <SignedOut>
           <SignInButton />
         </SignedOut>
         <SignedIn>
           <UserButton />
         </SignedIn>
-      </div>
+      </div> */}
 
     </div>
   )

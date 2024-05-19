@@ -18,8 +18,8 @@ function Button({ children, border, margin, width, height, type, ...rest }: Butt
       font-raleway leading-[154.5%] hover:opacity-90 
       ${border ? "rounded-[4px]" : "rounded-none"}
       ${margin ? "mt-[32px]" : ""}
-      ${width ? "w-full" : "w-[191px]"}
-      ${height ? "h-[52px]" : "h-[62px]"}
+      ${width ? "w-full" : "w-191"}
+      ${height ? "h-52" : "h-62"}
       `}
       {...rest}
     >

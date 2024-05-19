@@ -4,11 +4,11 @@ import Hero from '../components/Hero';
 import StepsHome from '../components/StepsHome';
 
 const Home = () => {
-
   return (
       <div className="w-screen">
         <Hero />
         <StepsHome />
+
 
         <div>
           <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>This weeks most popular<span className='text-primaryAvacado'>and best selling</span></h1>
@@ -21,4 +21,4 @@ const Home = () => {
       )
 }
 
-      export default Home
+export default Home

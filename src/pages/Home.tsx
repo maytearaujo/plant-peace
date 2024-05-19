@@ -1,7 +1,8 @@
-import MostPopular from '../components/MostPopular';
-import InSale from '../components/InSale';
+// import MostPopular from '../components/MostPopular';
+// import InSale from '../components/InSale';
 import Hero from '../components/Hero';
 import StepsHome from '../components/StepsHome';
+// import PlantsCard from '../components/PlantsCard';
 
 const Home = () => {
   const cardsData = [
@@ -12,21 +13,15 @@ const Home = () => {
 
 
   return (
-      <div className="w-screen">
-        <Hero />
-        <StepsHome />
-
-
-        <div className='flex flex-col items-center justify-center'>
-          <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>This weeks most popular<span className='text-primaryAvacado'> and best selling</span></h1>
-          <MostPopular />
-          <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>Plants<span className='text-primaryAvacado'> in sale</span></h1>
-          {/* <InSale/> */}
-        </div>
+    <div className="w-screen">
+      <Hero />
+      <StepsHome />
+      {/* <PlantsCard /> */}
+      {/* <MostPopular /> */}
 
     </div>
 
   )
 }
 
-      export default Home
+export default Home

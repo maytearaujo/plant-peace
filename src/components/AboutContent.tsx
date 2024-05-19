@@ -38,8 +38,8 @@ const AboutContent: React.FC<AboutProps> = ({ aboutData }) => {
                 <li>{hobbies}</li>
               </ul>
               <div className='flex flex-row my-10 mb-0 space-x-2'>
-                <Button><a href="{github}">Github</a></Button>
-                <Button><a href="{linkedin}">Linkedin</a></Button>
+                <Button><a href={github} target="_blank">Github</a></Button>
+                <Button><a href={linkedin} target="_blank">Linkedin</a></Button>
               </div>
             </div>
 

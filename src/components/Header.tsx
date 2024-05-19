@@ -63,7 +63,9 @@ const Header = () => {
 
       <div>
         <SignedOut>
-          <SignInButton />
+        <SignInButton>
+          <button><img src="/src/assets/navbar/logoUser.png" className="hover:w-[40px] " alt="" /></button>
+        </SignInButton>
         </SignedOut>
         <SignedIn>
           <UserButton />

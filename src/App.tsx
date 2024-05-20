@@ -1,4 +1,4 @@
-import Footer from "./components/Footer"
+/*import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Routes from "./routes/routes"
 import './index.css'
@@ -15,4 +15,4 @@ function App() {
   )
 }
 
-export default App
+export default App*/

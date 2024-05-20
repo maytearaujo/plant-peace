@@ -1,78 +1,93 @@
 {
   "plants": [
     {
-      "id": 1,
-      "name": "Echinocereus Cactus",
-      "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": [
-        "indoor",
-        "cactus"
+      "id": "7105db8a-f20a-44bc-a238-ec3184f88b47",
+      "plantName": "Cacto",
+      "plantSubtitle": "Cacto",
+      "plantType": "Cacto",
+      "price": "R$100,00",
+      "discountPercentage": "0%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Cacto",
+          "label": "indoor"
+        }
       ],
-      "price": "$139.99",
-      "isInSale": true,
-      "discountPercentage": 20,
-      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
-      "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "features": "Planta",
+      "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
     },
     {
-      "id": 2,
-      "name": "Echinocereus Cactus",
-      "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": [
-        "indoor",
-        "cactus"
+      "id": "feb1cb6e-1749-4e39-874c-03019de762be",
+      "plantName": "Flor de lotus",
+      "plantSubtitle": "Flor de lotus",
+      "plantType": "Flor de lotus",
+      "price": "R$700,00",
+      "discountPercentage": "50%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Flor de lotus",
+          "label": "indoor"
+        }
       ],
-      "price": "$139.99",
-      "isInSale": true,
-      "discountPercentage": 20,
-      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
-      "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "features": "Planta",
+      "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
     },
     {
-      "id": 3,
-      "name": "Echinocereus Cactus",
-      "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": [
-        "indoor",
-        "cactus"
+      "id": "e2bbf70f-a576-4892-82ec-ca67ec3fa824",
+      "plantName": "Girassol",
+      "plantSubtitle": "Girassol",
+      "plantType": "Girassol",
+      "price": "R$700,00",
+      "discountPercentage": "20%",
+      "label": "outdoor",
+      "labelArray": [
+        {
+          "plantType": "Girassol",
+          "label": "outdoor"
+        }
       ],
-      "price": "$139.99",
-      "isInSale": true,
-      "discountPercentage": 20,
-      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
-      "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "features": "Planta",
+      "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
     },
     {
-      "id": 4,
-      "name": "Echinocereus Cactus",
-      "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": [
-        "indoor",
-        "cactus"
+      "id": "61bba97b-0fe4-443e-982a-8e23f016b419",
+      "plantName": "Dracenas",
+      "plantSubtitle": "Dracenas",
+      "plantType": "Dracenas",
+      "price": "R$100,00",
+      "discountPercentage": "10%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Dracenas",
+          "label": "indoor"
+        }
       ],
-      "price": "$139.99",
-      "isInSale": true,
-      "discountPercentage": 20,
-      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
-      "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "features": "Planta",
+      "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
     },
     {
-      "id": 5,
-      "name": "Echinocereus Cactus",
-      "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": [
-        "indoor",
-        "cactus"
+      "id": "15bb7135-59c3-45cb-9ba7-0bfa549ec6c6",
+      "plantName": "Menta",
+      "plantSubtitle": "Menta",
+      "plantType": "Menta",
+      "price": "R$300,00",
+      "discountPercentage": "5%",
+      "label": "outdoor",
+      "labelArray": [
+        {
+          "plantType": "Menta",
+          "label": "outdoor"
+        }
       ],
-      "price": "$139.99",
-      "isInSale": true,
-      "discountPercentage": 20,
-      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
-      "description": "Ladyfinger cactus (Echinocereus pentalophus) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "features": "Planta",
+      "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
     }
   ]

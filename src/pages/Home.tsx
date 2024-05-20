@@ -9,7 +9,6 @@ const Home = () => {
       <Hero />
       <StepsHome />
 
-
       <div>
 
         <MostPopular />

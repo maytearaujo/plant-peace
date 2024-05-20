@@ -34,17 +34,35 @@ interface ValidationErrors {
 }
 
 const validationSchema = Yup.object().shape({
-  id: Yup.string().required('O id é obrigatório'),
-  plantName: Yup.string().required('O nome é obrigatório').min(2, 'O nome deve ter pelo menos 2 caracteres'),
-  plantSubtitle: Yup.string().required('O subtítulo é obrigatório').min(2, 'O subtítulo deve ter pelo menos 2 caracteres'),
-  plantType: Yup.string().required('O tipo é obrigatório').min(2, 'O tipo deve ter pelo menos 2 caracteres'),
-  price: Yup.string().required('O preço é obrigatório').min(3, 'O preço deve ser positivo'),
-  discountPercentage: Yup.string().required('O percentual de desconto é obrigatório').min(2, 'O percentual de desconto deve ser positivo').max(100, 'O percentual de desconto deve ser no máximo 100'),
-  label: Yup.string().required('O rótulo é obrigatório').min(2, 'O rótulo deve ter pelo menos 2 caracteres'),
-  features: Yup.string().required('As características são obrigatórias').min(2, 'As características devem ter pelo menos 2 caracteres'),
-  description: Yup.string().required('A descrição é obrigatória').min(2, 'A descrição deve ter pelo menos 2 caracteres'),
-  imgUrl: Yup.string().required('A URL da imagem é obrigatória'),
+  id: Yup.string().required('ID is required'),
+  plantName: Yup.string()
+    .required('Plant name is required')
+    .min(2, 'Plant name must be at least 2 characters long'),
+  plantSubtitle: Yup.string()
+    .required('Subtitle is required')
+    .min(2, 'Subtitle must be at least 2 characters long'),
+  plantType: Yup.string()
+    .required('Type is required')
+    .min(2, 'Type must be at least 2 characters long'),
+  price: Yup.string()
+    .required('Price is required')
+    .min(3, 'Price must be positive'),
+  discountPercentage: Yup.string()
+    .required('Discount percentage is required')
+    .min(2, 'Discount percentage must be positive')
+    .max(100, 'Discount percentage must be at most 100'),
+  label: Yup.string()
+    .required('Label is required')
+    .min(2, 'Label must be at least 2 characters long'),
+  features: Yup.string()
+    .required('Features are required')
+    .min(2, 'Features must be at least 2 characters long'),
+  description: Yup.string()
+    .required('Description is required')
+    .min(2, 'Description must be at least 2 characters long'),
+  imgUrl: Yup.string().required('Image URL is required'),
 });
+
 
 function PlantRegistration() {
   const [formData, setFormData] = useState<FormData>({
@@ -95,9 +113,7 @@ function PlantRegistration() {
   };
 
   const handleClick = (radioValue: string) => {
-    // Crie um novo objeto de rótulo
     const newLabel = { plantType: formData.plantType, label: radioValue };
-    // Atualize o estado adicionando o novo objeto ao array existente
     setFormData((prevFormData) => ({
       ...prevFormData,
       label: radioValue,

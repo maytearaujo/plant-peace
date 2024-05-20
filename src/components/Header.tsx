@@ -7,7 +7,7 @@ const Header = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
-    <div className=" px-12 bg-wisper flex justify-between py-8 md:justify-around items-center w-[100vw] h-20 font-raleway font-normal text-lg text-primaryLunarGreen">
+    <div className="sticky top-0 z-50 px-12 bg-wisper flex justify-between py-8 md:justify-around items-center w-[100vw] h-20 font-raleway font-normal text-lg text-primaryLunarGreen">
 
       <Link to="/">
         <img src={Logo} alt="Logo Plant Peace" />
@@ -22,7 +22,14 @@ const Header = () => {
           <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
         </div>
-
+        <div
+          className="space-y-2"
+          onClick={() => setIsNavOpen((prev) => !prev)}
+        >
+          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+        </div>
         <div className={isNavOpen ? "absolute w-[100%] h-[100vh] top-0 left-0 bg-wisper z-10 flex flex-col justify-evenly items-center" : "hidden"}>
 
           <div
@@ -46,32 +53,54 @@ const Header = () => {
             <li className="my-8 uppercase hover:text-primaryAvacado"><Link to="/">Home</Link></li>
             <li className="my-8 uppercase hover:text-primaryAvacado"><Link to="/plant-registration">Register</Link></li>
             <li className="my-8 uppercase hover:text-primaryAvacado"><Link to="/all-products">Products</Link></li>
-            <li className="my-8 uppercase hover:text-primaryAvacado"><Link to="/About">About us</Link></li>
+            <li className="my-8 uppercase hover:text-primaryAvacado"><Link to="/about">About us</Link></li>
             <li className="my-8 uppercase hover:text-primaryAvacado hidden"><Link to="/NotFound">Blog</Link></li>
           </ul>
+          {/* mobile */}
+          <div className="">
+            <SignedOut>
+              <SignInButton>
+                <button>
+                  <img src="/src/assets/navbar/logoUser.png" className="hover:w-[40px]" alt="" />
+                </button>
+              </SignInButton>
+            </SignedOut>
+            <SignedIn>
+              <UserButton afterSignOutUrl="/sign-in" />
+            </SignedIn>
+          </div>
         </div>
       </section>
 
-      <section className="w-5/12 h-20 hidden md:flex">
-        <ul className="flex flex-row justify-around items-center w-[100%] h-full">
-          <li className="hover:text-primaryAvacado"><Link to="/">Home</Link></li>
-          <li className="hover:text-primaryAvacado"><Link to="/plant-registration">Register</Link></li>
-          <li className="hover:text-primaryAvacado"><Link to="/all-products">Products</Link></li>
-          <li className="hover:text-primaryAvacado"><Link to="/About">About us</Link></li>
-          <li className="hidden hover:text-primaryAvacado"><Link to="/NotFound">Blog</Link></li>
-        </ul>
-      </section>
+      <div className="w-[80%] hidden md:flex justify-between">
+        <section className="w-[100%] h-20 md:flex justify-left">
+          <div className="flex justify-center w-[100%] items-center">
+            <ul className="flex flex-row justify-around items-center w-[50%] h-full">
+              <li className="hover:text-primaryAvacado"><Link to="/">Home</Link></li>
+              <li className="hover:text-primaryAvacado"><Link to="/plant-registration">Register</Link></li>
+              <li className="hover:text-primaryAvacado"><Link to="/all-products">Products</Link></li>
+              <li className="hover:text-primaryAvacado"><Link to="/about">About us</Link></li>
+              <li className="hidden hover:text-primaryAvacado"><Link to="/NotFound">Blog</Link></li>
+            </ul>
+          </div>
+          {/* normal */}
 
-      <div>
-        <SignedOut>
-          <SignInButton>
-            <button><img src="/src/assets/navbar/logoUser.png" className="hover:w-[40px] " alt="" /></button>
-          </SignInButton>
-        </SignedOut>
-        <SignedIn>
-          <UserButton afterSignOutUrl="/sign-in" />
-        </SignedIn>
+        </section>
+
+        <div className="flex flex-row items-center ml-14">
+          <SignedOut>
+            <SignInButton>
+              <button>
+                <img src="/src/assets/navbar/logoUser.png" className="hover:w-[40px]" alt="" />
+              </button>
+            </SignInButton>
+          </SignedOut>
+          <SignedIn>
+            <UserButton afterSignOutUrl="/sign-in" />
+          </SignedIn>
+        </div>
       </div>
+
 
 
     </div>

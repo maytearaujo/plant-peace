@@ -1,4 +1,5 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
+import logo from '../assets/footer/Group 26.png'
 
 const Footer = () => {
   return (
@@ -14,26 +15,28 @@ const Footer = () => {
           <div className=' ml-auto mt-[20px] md:mt-[174px] flex'>
             <ul className="mr-[8px] md:mr-[52px] space-y-[5px] md:space-y-[16px]">
               <h4 className='font-lato text-[12px] md:text-[24px]'>Links</h4>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/about/" className='hover:text-green-500'>About Us</a></li>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/products" className='hover:text-green-500'>Products</a></li>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/blogs" className='hover:text-green-500'>Blogs</a></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><Link to="/About" className='hover:text-green-500'>About Us</Link></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><Link to="/all-products" className='hover:text-green-500'>Products</Link></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><Link to="/NotFound" className='hover:text-green-500'>Blogs</Link></li>
             </ul>
             <ul className='space-y-[5px] mr-[10px] md:space-y-[16px]'>
               <h4 className='font-lato text-[12px] md:text-[24px]'>Community</h4>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/about/" className='hover:text-green-500'>About Us</a></li>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/products" className='hover:text-green-500'>Products</a></li>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/blogs" className='hover:text-green-500'>Blogs</a></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><Link to="/About" className='hover:text-green-500'>About Us</Link></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><Link to="/all-products" className='hover:text-green-500'>Products</Link></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><Link to="/NotFound" className='hover:text-green-500'>Blogs</Link></li>
             </ul>
           </div>
         </div>
         <img src="src/assets/footer/Line 1.png" className='' alt="" />
-        <div className='flex md:mt-[28px]'>
-          <img src="src/assets/footer/Group 26.png" className='w-[24px] mt-[10px] md:w-[54px]' alt="" />
-          <p className='ml-auto mt-[10px] text-[5px] text-center md:text-[16px] md:text-center w-[80px] md:w-[200px]'>Compassinhos ®. All rights reserved.</p>
+        <div className='relative flex justify-between md:mt-[28px]'>
+          <Link to='/' className='cursor-pointer w-fit hover:opacity-80 '>
+            <img src={logo} className='w-[24px] mt-[10px] md:w-[54px]' alt="" />
+          </Link>
+          <p className='mt-[10px] text-[5px] text-center md:text-[16px] md:text-center w-[80px] md:w-[200px]'>Compassinhos ®. All rights reserved.</p>
         </div>
       </div>
     </footer>
-    )
-  }
-  
-  export default Footer
+  )
+}
+
+export default Footer

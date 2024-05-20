@@ -1,12 +1,23 @@
-import { Routes as RouterRoutes, Route, BrowserRouter } from "react-router-dom";
+import { Routes as RouterRoutes, Route, BrowserRouter, useLocation } from "react-router-dom";
 import Home from "../pages/Home";
 import Product from "../pages/Product/[id]";
 import PlantRegistration from "../pages/PlantRegistration";
 import About from "../pages/About/About";
-import NotFound from "../components/NotFound";
+import NotFound from "../pages/NotFound";
 import AllProducts from "../pages/AllProducts";
+import { useEffect, useState } from "react";
 
 const AppRoutes = () => {
+
+  const location = useLocation()
+
+  const [path, setPath] = useState<string>('');
+
+  useEffect(() => {
+    setPath(location.pathname);
+    window.scrollTo(0, 0);
+  }, [path, location.pathname])
+
   return (
     <BrowserRouter>
       <RouterRoutes>

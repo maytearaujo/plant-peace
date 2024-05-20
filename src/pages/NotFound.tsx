@@ -1,5 +1,4 @@
-import React from 'react'
-import Button from './Button';
+import Button from '../components/Button';
 
 const NotFound = () => {
     return (
@@ -11,8 +10,8 @@ const NotFound = () => {
                     <div className='lg:w-1/2 flex flex-col justify-center items-center ml-5'>
                         <h1 className='font-stylish text-center text-4xl font-bold md:text-5xl lg:text-6xl '>Plant not found <span className='flex flex-row justify-start'>Ops, Page not found</span></h1>
                         <div className='flex flex-row my-10'>
-                            <Button border>
-                                <a className='font-bold' href='/'>Go Back</a>
+                            <Button border redirect='/'>
+                                <span className='font-bold'>Go Back</span>
                             </Button>
                         </div>
                     </div>

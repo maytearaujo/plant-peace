@@ -44,8 +44,8 @@ const StepsHome = () => {
                 our goal is to inspire and support you every step of the way. Get ready to explore our virtual
                 garden and discover the joys of gardening with us!
               </p>
-              <Button> 
-                <a href="./NotFound"> See more photos</a>
+              <Button redirect='/NotFound'>
+                <span> See more photos</span>
               </Button>
             </div>
           </div>

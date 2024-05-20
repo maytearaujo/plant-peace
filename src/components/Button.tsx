@@ -1,5 +1,6 @@
 import { ReactNode } from "react"
 import styles from "./Button.module.css"
+import { useNavigate } from "react-router-dom";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -7,10 +8,18 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   margin?: boolean;
   height?: boolean;
   width?: boolean;
-  type?: "submit"
+  type?: "submit";
+  redirect?: string;
 }
 
-function Button({ children, border, margin, width, height, type, ...rest }: ButtonProps) {
+function Button({ children, border, margin, width, height, type, redirect, ...rest }: ButtonProps) {
+  const navigate = useNavigate();
+
+  function handleNavigate(redirect: string) {
+    navigate(`${redirect}`);
+    window.scrollTo(0, 0);
+  }
+
   return (
     <button
       type={type}
@@ -24,6 +33,7 @@ function Button({ children, border, margin, width, height, type, ...rest }: Butt
       ${height ? "h-52" : "h-62"}
       `}
       {...rest}
+      onClick={() => handleNavigate(redirect || "")}
     >
       {children}
     </button>

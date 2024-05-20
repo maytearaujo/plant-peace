@@ -8,10 +8,7 @@ const Home = () => {
     <div className="w-screen">
       <Hero />
       <StepsHome />
-
-
       <div>
-
         <MostPopular />
         <InSale />
       </div>

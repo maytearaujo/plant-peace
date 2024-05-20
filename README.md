@@ -57,18 +57,25 @@ Certifique-se de ter instalado em sua máquina:
 
   Após instalar as dependências, você pode iniciar o projeto executando o comando:
   
-      npm start
+      npm run dev
       
   (O projeto será iniciado em seu navegador padrão)
   
 ---
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Visualização)](https://git.io/typing-svg)
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Como+executar+o+servidor)](https://git.io/typing-svg)
+
+  Após instalar as dependências, você pode iniciar o projeto executando o comando:
+  
+      npm run start:json-server
+      
+  
 ---
+
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Link+do+o+trello)](https://git.io/typing-svg)
 
 Clique neste link para acessar nosso quadro no Trello:
-[aqui](https://trello.com/b/pzxQKcWP/desafio-2)
+[aqui](https://trello.com/invite/b/pzxQKcWP/ATTIc90adc0cdd144ef7127ed3bc2ea4f8919B1D5CE6/desafio-2-jovemscript)
 
 ---
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Time+JovemScript)](https://git.io/typing-svg)

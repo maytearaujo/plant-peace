@@ -1,4 +1,5 @@
 import { ReactNode } from "react"
+import styles from "./Button.module.css"
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
@@ -16,6 +17,7 @@ function Button({ children, border, margin, width, height, type, ...rest }: Butt
       className=
       {`flex items-center justify-center bg-primaryLunarGreen text-athenaGrey 
       font-raleway leading-[154.5%] hover:opacity-90 
+      ${styles.button}
       ${border ? "rounded-[4px]" : "rounded-none"}
       ${margin ? "mt-[32px]" : ""}
       ${width ? "w-full" : "w-191"}

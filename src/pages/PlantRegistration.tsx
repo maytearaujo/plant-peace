@@ -111,11 +111,6 @@ function PlantRegistration() {
       await validationSchema.validate(formData, { abortEarly: false });
       setErrors({});
 
-      const cleanPrice = formData.price.toString().replace(/[^0-9.]/g, '');
-      const cleanDiscountPercentage = formData.discountPercentage.toString().replace(/[^0-9]/g, '');
-
-      setFormData({ ...formData, price: cleanPrice, discountPercentage: cleanDiscountPercentage });
-
       const response = await axios.post('http://localhost:3000/plants', formData);
 
       toast.success('Plant registered successfully!');
@@ -135,6 +130,7 @@ function PlantRegistration() {
           imgUrl: '../src/assets/home/3this/photo1.png',
         }
       );
+
     } catch (err: any) {
       const validationErrors: ValidationErrors = {};
       err.inner.forEach((error: Yup.ValidationError) => {

@@ -8,8 +8,9 @@ import { useNavigate } from 'react-router-dom'
 
 import imagensJSON from '../assets/data/plants.json'; // Importando o JSON
 import Tag from './Tag';
+import { HTMLAttributes } from 'react';
 
-interface PlantsCardProps {
+interface PlantsCardProps extends HTMLAttributes<HTMLDivElement> {
     id: string;
     plantName: string;
     price: string;
@@ -17,7 +18,7 @@ interface PlantsCardProps {
     label: string;
 }
 
-const PlantCard = ({ id, plantName, price, discountPrice, label }: PlantsCardProps) => {
+const PlantCard = ({ id, plantName, price, discountPrice, label, ...rest }: PlantsCardProps) => {
     const navigate = useNavigate();
 
     function handleNavigate() {
@@ -26,7 +27,7 @@ const PlantCard = ({ id, plantName, price, discountPrice, label }: PlantsCardPro
     }
 
     return (
-        <div className='flex flex-col max-w-[389px] my-24 drop-shadow-md cursor-pointer' onClick={handleNavigate}>
+        <div className='flex flex-col max-w-[389px] my-24 drop-shadow-md cursor-pointer' onClick={handleNavigate} {...rest}>
             <img src={imagensJSON[0].imgUrl} alt={plantName} />
 
             <div className='flex flex-col gap-6 bg-white px-8 pb-8 pt-4'>

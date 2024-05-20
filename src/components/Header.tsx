@@ -1,16 +1,18 @@
 import Logo from "../assets/navbar/logo.png"
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
   const [isNavOpen, setIsNavOpen] = useState(false);
 
   return (
     <div className="sticky top-0 z-50 px-12 bg-wisper flex justify-between py-8 md:justify-around items-center w-[100vw] h-20 font-raleway font-normal text-lg text-primaryLunarGreen">
 
-      <a href="/" target="_self">
+      <Link to="/">
         <img src={Logo} alt="Logo Plant Peace" />
-      </a>
+      </Link>
 
       <section className="flex md:hidden">
         <div
@@ -21,7 +23,16 @@ const Header = () => {
           <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
           <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
         </div>
+        <div
+          className="space-y-2"
+          onClick={() => setIsNavOpen((prev) => !prev)}
+        >
+          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+          <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
+        </div>
 
+        <div className={isNavOpen ? "absolute w-[100%] h-[100vh] top-0 left-0 bg-wisper z-10 flex flex-col justify-evenly items-center" : "hidden"}>
         <div className={isNavOpen ? "absolute w-[100%] h-[100vh] top-0 left-0 bg-wisper z-10 flex flex-col justify-evenly items-center" : "hidden"}>
 
           <div
@@ -92,6 +103,7 @@ const Header = () => {
           </SignedIn>
         </div>
       </div>
+
 
 
     </div>

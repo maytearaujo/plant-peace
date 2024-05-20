@@ -66,7 +66,7 @@ function Product() {
 
           <span className='text-black text-2xl font-lato font-bold'>{product.price}</span>
 
-          <Button>
+          <Button redirect='/NotFound'>
             <p>Check out</p>
           </Button>
 

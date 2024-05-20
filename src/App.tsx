@@ -1,10 +1,9 @@
-/*import Footer from "./components/Footer"
+import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Routes from "./routes/routes"
-import './index.css'
+import './index.css';
 
 function App() {
-
   return (
     <div className="bg-white text-primaryLunarGreen">
       <Header />
@@ -15,4 +14,4 @@ function App() {
   )
 }
 
-export default App*/
+export default App

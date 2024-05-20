@@ -12,6 +12,11 @@ import ProductsLayout from './layouts/products-layout.tsx';
 // Import the components
 import Home from './pages/Home.tsx';
 import About from './pages/About/About.tsx';
+import PlantRegistration from './pages/PlantRegistration.tsx';
+import AllProducts from './pages/AllProducts.tsx';
+import ProductPage from './pages/Product/[id].tsx';
+import NotFound from './pages/NotFound.tsx'
+
 import { SignIn } from '@clerk/clerk-react';
 
 // Import your publishable key
@@ -26,15 +31,15 @@ const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { path: '/', element: <Home /> },
-      { 
-        path: '/sign-in', 
+      {
+        path: '/sign-in',
         element: (
           <div className="flex justify-center items-center h-screen">
             <SignIn appearance={{
-               elements: { formButtonPrimary: "bg-bgFooter hover:bg-bgFooter", },
-            }}/>
+              elements: { formButtonPrimary: "bg-bgFooter hover:bg-bgFooter", },
+            }} />
           </div>
-        ) 
+        )
       },
       {
         element: <AboutLayout />,
@@ -45,13 +50,25 @@ const router = createBrowserRouter([
       {
         element: <RegisterLayout />,
         children: [
-          { path: '/plant-registration', element: <About /> },
+          { path: '/plant-registration', element: <PlantRegistration /> },
         ]
       },
       {
         element: <ProductsLayout />,
         children: [
-          { path: '/all-products', element: <About /> },
+          { path: '/all-products', element: <AllProducts /> },
+        ]
+      },
+      {
+        element: <ProductsLayout />,
+        children: [
+          { path: '/Product/:id', element: <ProductPage /> },
+        ]
+      },
+      {
+        element: <ProductsLayout />,
+        children: [
+          { path: '/*', element: <NotFound /> },
         ]
       }
     ]

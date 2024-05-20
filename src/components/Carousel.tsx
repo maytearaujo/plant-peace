@@ -11,6 +11,19 @@ type Plant = {
   label: string[];
   labelArray: { plantType: string; label: string }[];
   price: string;
+  discountPercentage: string;
+  features: string;
+  description: string;
+  imgUrl: string;
+};
+
+type FilteredPlant = {
+  id: string;
+  plantName: string;
+  plantSubtitle: string;
+  label: string[];
+  labelArray: { plantType: string; label: string }[];
+  price: string;
   discountPercentage: number;
   features: string;
   description: string;
@@ -19,10 +32,13 @@ type Plant = {
 
 interface CarouselProps {
   margin?: boolean;
+  isInSale?: boolean;
 }
 
-const Carousel = ({ margin }: CarouselProps) => {
+const Carousel = ({ margin, isInSale }: CarouselProps) => {
   const [plants, setPlants] = useState<Plant[]>([]);
+  const [plantsWithDiscount, setPlantsWithDiscount] = useState<FilteredPlant[]>([]);
+  const [plantsWithoutDiscount, setPlantsWithoutDiscount] = useState<FilteredPlant[]>([]);
 
   useEffect(() => {
     const fetchPlants = async () => {
@@ -36,6 +52,28 @@ const Carousel = ({ margin }: CarouselProps) => {
 
     fetchPlants();
   }, []);
+
+  useEffect(() => {
+    const cleanedDiscount = plants.map((plant) => {
+      const filteredDiscount = plant.discountPercentage.replace('%', '');
+      const discount = parseInt(filteredDiscount);
+
+      return {
+        ...plant,
+        discountPercentage: discount,
+      };
+    });
+
+    function filterPlantsWithDiscount() {
+      const plantsWithDiscount = cleanedDiscount.filter((plant) => plant.discountPercentage > 0);
+      setPlantsWithDiscount(plantsWithDiscount);
+
+      const plantsWithoutDiscount = cleanedDiscount.filter((plant) => plant.discountPercentage === 0);
+      setPlantsWithoutDiscount(plantsWithoutDiscount);
+    }
+    filterPlantsWithDiscount();
+  }, [plants]);
+
 
   return (
     <div className={`w-screen ${margin && 'mt-[72px]'}`}>
@@ -57,18 +95,26 @@ const Carousel = ({ margin }: CarouselProps) => {
             }}
             className='flex gap-[48px]'
           >
-            {plants.length > 0 &&
-              plants.map((item) => (
-                <SwiperSlide key={item.id}>
-                  <PlantCard
-                    id={item.id}
-                    plantName={item.plantName}
-                    price={item.price}
-                    discountPrice={item.discountPercentage.toString()}
-                    label={item.labelArray[0].label}
-                  />
-                </SwiperSlide>
-              ))}
+            {isInSale === true && plants.length > 0 ? plantsWithDiscount.map((item) => (
+              <SwiperSlide key={item.id}>
+                <PlantCard
+                  id={item.id}
+                  plantName={item.plantName}
+                  price={item.price}
+                  discountPrice={item.discountPercentage.toString()}
+                  label={item.labelArray[0].label}
+                />
+              </SwiperSlide>
+            )) : plantsWithoutDiscount.length > 0 && plantsWithoutDiscount.map((item) => (
+              <SwiperSlide key={item.id}>
+                <PlantCard
+                  id={item.id}
+                  plantName={item.plantName}
+                  price={item.price}
+                  label={item.labelArray[0].label}
+                />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>

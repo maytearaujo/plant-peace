@@ -7,10 +7,11 @@ function App() {
 
   return (
     <div className="bg-white text-primaryLunarGreen">
-      <Header /> 
-      <Routes /> 
-      <Footer /> 
-     </div>
+      <Header />
+      <Routes />
+      <Footer />
+    </div>
+
   )
 }
 

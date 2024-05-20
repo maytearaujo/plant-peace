@@ -1,13 +1,31 @@
 interface TagProps {
-  label: string
+  label: string;
+  style?: 'carousel';
 }
 
-function Tag({ label }: TagProps) {
+function Tag({ label, style }: TagProps) {
+  const styles = {
+    carousel: {
+      border: 'border-primaryAvacado',
+      bg: 'bg-[#F0F1EE]',
+      text: 'text-primaryAvacado',
+    },
+    default: {
+      border: 'border-[#83E281]',
+      bg: 'bg-[#F6FFF6]',
+      text: 'text-[#158212]',
+    },
+  };
+
+  const selectedStyle = style === 'carousel' ? styles.carousel : styles.default;
+
   return (
-    <label className="flex items-center justify-center rounded-full py-[7px] px-[13px] bg-[#F6FFF6] border-[1.62px] border-[#83E281] w-fit">
-      <span className="leading-[154.5%] font-raleway text-[#158212]">{label}</span>
+    <label
+      className={`flex items-center justify-center rounded-full py-[7px] px-[13px] border-[1px] ${selectedStyle.bg} ${selectedStyle.border} w-fit`}
+    >
+      <span className={`leading-[154.5%] font-raleway ${selectedStyle.text}`}>{label}</span>
     </label>
-  )
+  );
 }
 
-export default Tag
+export default Tag;

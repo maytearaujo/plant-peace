@@ -1,13 +1,12 @@
-import PlantsCard from "./PlantsCard"
+import Carousel from './Carousel'
 
-const InSale = () => {
-  return (
-    <div className='flex flex-col items-center justify-center'>
-      <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'>Plants<span className='text-primaryAvacado'> in sale</span></h1>
-      <PlantsCard />
-    </div>
-  )
+function InSale() {
+    return (
+        <div className='flex flex-col items-center justify-center bg-[#F0F1EE]'>
+            <h1 className='font-ebGaramond font-bold text-64 text-primaryLunarGreen capitalize'><span className='text-primaryAvacado'> Plants In </span>Sale</h1>
+            <Carousel />
+        </div>
+    )
 }
 
-export default InSale
-
+export default InSale;

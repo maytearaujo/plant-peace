@@ -39,6 +39,7 @@ export default {
         cardAbout: "#D6EBDE",
         bgAbout: "#567361",
         greenHover: "#31C26D",
+        greenError: "#DCF0BB",
       },
       screens: {
         xl: "1535px",

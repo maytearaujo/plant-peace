@@ -1,7 +1,6 @@
 import React from 'react'
 import Button from '../components/Button';
 import CardHome from '../components/CardHome';
-const NotFound = "./NotFound.tsx";
 
 const StepsHome = () => {
   const cardsData = [
@@ -46,7 +45,7 @@ const StepsHome = () => {
                 garden and discover the joys of gardening with us!
               </p>
               <Button> 
-                <a href={NotFound}> See more photos</a>
+                <a href="./NotFound"> See more photos</a>
               </Button>
             </div>
           </div>

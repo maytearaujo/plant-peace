@@ -59,7 +59,8 @@ const Header = () => {
           <li className="hover:text-primaryAvacado"><a href="/about">About us</a></li>
           <li className="hidden hover:text-primaryAvacado"><a href="#">Blog</a></li>
         </ul>
-      </nav>
+      </section>
+
       <div>
         <SignedOut>
         <SignInButton>
@@ -69,7 +70,7 @@ const Header = () => {
         <SignedIn>
           <UserButton />
         </SignedIn>
-      </div> 
+      </div>
 
     </div>
   )

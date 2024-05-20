@@ -145,68 +145,69 @@ function PlantRegistration() {
   };
 
   return (
-    <main className="h-full w-screen flex justify-between">
+    <main className="bg-wisper h-full w-screen flex justify-center md:justify-between">
       <Toaster
         position='top-right'
       />
+      <div className='flex justify-center mb-10 h-[99%] mt-10'>
+        <form className="ml-6 px-6 pt-6 pb-98 w-98 flexflex-col gap-9" onSubmit={handleSubmit}>
+          <div className="h-14 flex items-center border-b-[1px] border-[#AFB2AA]">
+            <h1 className="mb-2 font-inter font-semibold text-2xl text-[#354733]">Plant Registration</h1>
+          </div>
 
-      <form className="ml-[50px] px-[50px] pt-[50px] pb-[122px] w-[572px] flex flex-col gap-9" onSubmit={handleSubmit}>
-        <div className="h-14 flex items-center border-b-[1px] border-[#AFB2AA]">
-          <h1 className="mb-2 font-inter font-semibold text-2xl text-[#354733]">Plant Registration</h1>
-        </div>
+          <div className="flex flex-col gap-6">
+            <div>
+              <Input id="plantName" name="plantName" placeholder="Echinocereus Cactus" type="inputText" label="Plant name" error={errors.plantName ? true : false} value={formData.plantName} onChange={handleChange} />
+              {errors.plantName && <label className="text-red-500">{errors.plantName}</label>}
+            </div>
 
-        <div className="flex flex-col gap-6">
-          <div>
-            <Input id="plantName" name="plantName" placeholder="Echinocereus Cactus" type="inputText" label="Plant name" error={errors.plantName ? true : false} value={formData.plantName} onChange={handleChange} />
-            {errors.plantName && <label className="text-red-500">{errors.plantName}</label>}
+            <div>
+              <Input id="plantSubtitle" name="plantSubtitle" placeholder="A majestic addition to your plant collection" type="inputText" label="Plant subtitle" error={errors.plantSubtitle ? true : false} value={formData.plantSubtitle} onChange={handleChange} />
+              {errors.plantSubtitle && <label className="text-red-500">{errors.plantSubtitle}</label>}
+            </div>
           </div>
 
           <div>
-            <Input id="plantSubtitle" name="plantSubtitle" placeholder="A majestic addition to your plant collection" type="inputText" label="Plant subtitle" error={errors.plantSubtitle ? true : false} value={formData.plantSubtitle} onChange={handleChange} />
-            {errors.plantSubtitle && <label className="text-red-500">{errors.plantSubtitle}</label>}
-          </div>
-        </div>
-
-        <div>
-          <Input id="plantType" name="plantType" placeholder="Cactus" type="inputText" label="Plant type" error={errors.plantType ? true : false} value={formData.plantType} onChange={handleChange} />
-          {errors.plantType && <label className="text-red-500">{errors.plantType}</label>}
-        </div>
-
-        <div className="flex gap-[18px]">
-          <div>
-            <Input id="price" name="price" placeholder="$139.99" type="inputNumber" maskType='currency' label="Price" error={errors.price ? true : false} value={formData.price} onChange={handleChange} />
-            {errors.price && <label className="text-red-500">{errors.price}</label>}
+            <Input id="plantType" name="plantType" placeholder="Cactus" type="inputText" label="Plant type" error={errors.plantType ? true : false} value={formData.plantType} onChange={handleChange} />
+            {errors.plantType && <label className="text-red-500">{errors.plantType}</label>}
           </div>
 
-          <div>
-            <Input id="discountPercentage" name="discountPercentage" placeholder="20%" type="inputNumber" maskType='percentage' label="Discount percentage" error={errors.discountPercentage ? true : false} value={formData.discountPercentage} onChange={handleChange} onBlur={handleBlur} max={100} />
-            {errors.discountPercentage && <label className="text-red-500">{errors.discountPercentage}</label>}
-          </div>
-        </div>
+          <div className="flex gap-[18px]">
+            <div>
+              <Input id="price" name="price" placeholder="$139.99" type="inputNumber" maskType='currency' label="Price" error={errors.price ? true : false} value={formData.price} onChange={handleChange} />
+              {errors.price && <label className="text-red-500">{errors.price}</label>}
+            </div>
 
-        <div>
-          <Input id='indoorLabel' type='radioButton' label='Label' placeholder='' handleChange={handleClick} />
-          {errors.label && <label className="text-red-500">{errors.label}</label>}
-        </div>
-
-        <div className="flex flex-col gap-4">
-          <div>
-            <TextArea id="features" name="features" placeholder="Species: Echinocereus..." label="Features" error={errors.features ? true : false} value={formData.features} onChange={handleChange} />
-            {errors.features && <label className="text-red-500">{errors.features}</label>}
+            <div>
+              <Input id="discountPercentage" name="discountPercentage" placeholder="20%" type="inputNumber" maskType='percentage' label="Discount percentage" error={errors.discountPercentage ? true : false} value={formData.discountPercentage} onChange={handleChange} onBlur={handleBlur} max={100} />
+              {errors.discountPercentage && <label className="text-red-500">{errors.discountPercentage}</label>}
+            </div>
           </div>
 
           <div>
-            <TextArea id="description" name="description" placeholder="Ladyfinger cactus..." label="Description" error={errors.description ? true : false} value={formData.description} onChange={handleChange} />
-            {errors.description && <label className="text-red-500">{errors.description}</label>}
+            <Input id='indoorLabel' type='radioButton' label='Label' placeholder='' handleChange={handleClick} />
+            {errors.label && <label className="text-red-500">{errors.label}</label>}
           </div>
-        </div>
 
-        <Button type={'submit'} border margin width height>
-          <span className="font-inter font-bold">Register</span>
-        </Button>
-      </form>
+          <div className="flex flex-col gap-4">
+            <div>
+              <TextArea id="features" name="features" placeholder="Species: Echinocereus..." label="Features" error={errors.features ? true : false} value={formData.features} onChange={handleChange} />
+              {errors.features && <label className="text-red-500">{errors.features}</label>}
+            </div>
 
-      <img src="../../src/assets/home/1discover/image.png" className="mix-blend-luminosity" />
+            <div>
+              <TextArea id="description" name="description" placeholder="Ladyfinger cactus..." label="Description" error={errors.description ? true : false} value={formData.description} onChange={handleChange} />
+              {errors.description && <label className="text-red-500">{errors.description}</label>}
+            </div>
+          </div>
+
+          <Button type={'submit'} border margin width height>
+            <span className="font-inter font-bold">Register</span>
+          </Button>
+        </form>
+      </div>
+      <img src="../../src/assets/home/1discover/image.png" className=" hidden w-[50%] h-[100vh] mix-blend-luminosity md:flex" />
+
     </main>
   );
 }

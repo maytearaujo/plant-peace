@@ -17,7 +17,7 @@ const Hero = () => {
  
           <section className="h-[100%] flex flex-col justify-between">
             <h1 className="font-ebGaramond font-bold text-primaryLunarGreen text-[4rem] capitalize  leading-[5.2rem] md:text-64">Discover your <span className="text-primaryAvacado">green</span> side</h1>
-            <p>We are your one-stop destination for all things green and growing. Our website offers a wide array of stunning plants, ranging from vibrant flowers  to lush indoor foliage, allowing you to create your very own green oasis.</p>
+            <p className="mb-4">We are your one-stop destination for all things green and growing. Our website offers a wide array of stunning plants, ranging from vibrant flowers  to lush indoor foliage, allowing you to create your very own green oasis.</p>
             <Button onClick={() => navigate('./NotFound')} children="Shop now" />
             
           </section>

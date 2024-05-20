@@ -15,9 +15,8 @@ export default function RegisterLayout () {
   if (!isLoaded){
     return (
         <div className="flex justify-center items-center h-screen">
-          <div className="
-            h-[200px] w-[200px] border-[20px] border-l-gray-200 border-l-gray-200 border-l-gray-200 border-l-bgFooter
-            animate-spin ease-linear rounded-full ">
+            <div className="h-200 w-200 border-[1.25rem] border-l-gray-200 border-l-gray-200 border-l-gray-200 
+                 border-l-greenHover animate-spin ease-linear rounded-full">
           </div>
         </div>
       );

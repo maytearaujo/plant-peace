@@ -43,10 +43,10 @@ const Header = () => {
             </div>
             <ul className="flex flex-col items-center justify-between min-h-[250px]">
               <li className="my-8 uppercase hover:text-primaryAvacado"><a href="/">Home</a></li>
-              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="#">Register</a></li>
-              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="#">Poducts</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="/plant-registration">Register</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado"><a href="/products">Products</a></li>
               <li className="my-8 uppercase hover:text-primaryAvacado"><a href="/about">About us</a></li>
-              <li className="my-8 uppercase hover:text-primaryAvacado hidden"><a href="#">Blog</a></li>
+              <li className="my-8 uppercase hover:text-primaryAvacado hidden"><a href="/NotFound">Blog</a></li>
             </ul>
           </div>
         </section>
@@ -54,10 +54,10 @@ const Header = () => {
       <section className="w-5/12 h-20 hidden md:flex">
         <ul className="flex flex-row justify-around items-center w-[100%] h-full">
           <li className="hover:text-primaryAvacado"><a href="/">Home</a></li>
-          <li className="hover:text-primaryAvacado"><a href="#">Register</a></li>
-          <li className="hover:text-primaryAvacado"><a href="#">Poducts</a></li>
+          <li className="hover:text-primaryAvacado"><a href="/plant-registration">Register</a></li>
+          <li className="hover:text-primaryAvacado"><a href="#">Products</a></li>
           <li className="hover:text-primaryAvacado"><a href="/about">About us</a></li>
-          <li className="hidden hover:text-primaryAvacado"><a href="#">Blog</a></li>
+          <li className="hidden hover:text-primaryAvacado"><a href="/NotFound">Blog</a></li>
         </ul>
       </section>
 

@@ -1,4 +1,4 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
+
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,14 +10,14 @@ import imagensJSON from '../assets/data/plants.json'; // Importando o JSON
 import Tag from './Tag';
 
 interface PlantsCardProps {
-    id: number;
-    name: string;
+    id: string;
+    plantName: string;
     price: string;
     discountPrice: string;
     label: string;
 }
 
-const PlantCard = ({ id, name, price, discountPrice, label }: PlantsCardProps) => {
+const PlantCard = ({ id, plantName, price, discountPrice, label }: PlantsCardProps) => {
     const navigate = useNavigate();
 
     function handleNavigate() {
@@ -27,11 +27,11 @@ const PlantCard = ({ id, name, price, discountPrice, label }: PlantsCardProps) =
 
     return (
         <div className='flex flex-col max-w-[389px] my-24 drop-shadow-md cursor-pointer' onClick={handleNavigate}>
-            <img src={imagensJSON[0].imgUrl} alt={name} />
+            <img src={imagensJSON[0].imgUrl} alt={plantName} />
 
             <div className='flex flex-col gap-6 bg-white px-8 pb-8 pt-4'>
                 <div>
-                    <h3 className='text-primaryLunarGreen font-lato font-bold text-2xl mb-1'>{name}</h3>
+                    <h3 className='text-primaryLunarGreen font-lato font-bold text-2xl mb-1'>{plantName}</h3>
                     <span className='text-primaryLunarGreen font-raleway'>{price}</span>
                 </div>
 
@@ -42,3 +42,4 @@ const PlantCard = ({ id, name, price, discountPrice, label }: PlantsCardProps) =
 }
 
 export default PlantCard;
+

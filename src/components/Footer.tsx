@@ -2,8 +2,8 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className='relative bg-bgFooter h-[150px] md:h-[572px]'>
-      <div className='md:mx-[100px] text-white'>
+    <footer className='relative bg-bgFooter h-150 md:h-572'>
+      <div className='md:mx-100 text-white'>
         <div className='absolute inset-0 bg-cover bg-center' style={{ backgroundImage: "url('../src/assets/footer/1102973_204 1.png')" }}></div>
         <div className='relative flex'>
           <div className='ml-[10px] my-[20px] md:my-[135px] space-y-[5px] md:space-y-[16px]'>

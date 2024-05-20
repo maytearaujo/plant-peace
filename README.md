@@ -1,3 +1,4 @@
+
 <p align="center">
 
 <img src="https://camo.githubusercontent.com/82291b0fe831bfc6781e07fc5090cbd0a8b912bb8b8d4fec0696c881834f81ac/68747470733a2f2f70726f626f742e6d656469612f394575424971676170492e676966" width="100%" height="2">
@@ -23,14 +24,54 @@
 
 <br>
 
-## Como abrir o projeto 
+---
 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Pré-requisitos)](https://git.io/typing-svg)
 
-## Visualização 
+Certifique-se de ter instalado em sua máquina:
+- Node.js
+- npm (geralmente é instalado junto com o Node.js)
+  
+---
 
-## Link do trello 
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Instalação)](https://git.io/typing-svg)
+1. Clone este repositório em sua máquina local:
 
-## Time JovemScript
+     ```bash
+     git clone https://github.com/maytearaujo/plant-peace.git
+     ```
+2. Navegue até o diretório do projeto:
+
+    ```bash
+    cd plant-peace
+    ```
+3. Instale as dependências do projeto:
+   
+    ```bash
+    npm install
+      ```
+
+---
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Como+executar+o+projeto)](https://git.io/typing-svg)
+
+  Após instalar as dependências, você pode iniciar o projeto executando o comando:
+  
+      npm start
+      
+  (O projeto será iniciado em seu navegador padrão)
+  
+---
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Visualização)](https://git.io/typing-svg)
+
+---
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Link+do+o+trello)](https://git.io/typing-svg)
+
+Clique neste link para acessar nosso quadro no Trello:
+[aqui](https://trello.com/b/pzxQKcWP/desafio-2)
+
+---
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Time+JovemScript)](https://git.io/typing-svg)
 
 <p><img src="./src/assets/favicon.png"> Vitor Hugo Antunes Passos</p>
 <p><img src="./src/assets/favicon.png"> Maria Eduarda Cardoso da Silva</p>

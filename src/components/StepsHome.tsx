@@ -3,12 +3,12 @@ import Button from '../components/Button';
 import CardHome from '../components/CardHome';
 
 const StepsHome = () => {
-    const cardsData = [
-        { image: "/src/assets/home/2steps/Ellipse 3.png", title: 'Watering', subtitle: 'water your plants when the top inch of soil feels dry to the touch. Avoid overwatering, as it can lead to root  dehydration.' },
-        { image: "/src/assets/home/2steps/Ellipse 4.png", title: 'Sunlight', subtitle: 'Most plants need adequate sunlight to thrive. Place your plants in areas that receive the appropriate amount of light for their specific needs' },
-        { image: "/src/assets/home/2steps/Ellipse 5.png", title: 'Nutrients and Fertilizing', subtitle: "Choose a suitable fertilizer based on the specific needs of your plants, whether it's a balanced or specialized formula." },
-      ];
-      
+  const cardsData = [
+    { image: "/src/assets/home/2steps/Ellipse 3.png", title: 'Watering', subtitle: 'water your plants when the top inch of soil feels dry to the touch. Avoid overwatering, as it can lead to root  dehydration.' },
+    { image: "/src/assets/home/2steps/Ellipse 4.png", title: 'Sunlight', subtitle: 'Most plants need adequate sunlight to thrive. Place your plants in areas that receive the appropriate amount of light for their specific needs' },
+    { image: "/src/assets/home/2steps/Ellipse 5.png", title: 'Nutrients and Fertilizing', subtitle: "Choose a suitable fertilizer based on the specific needs of your plants, whether it's a balanced or specialized formula." },
+  ];
+
   return (
     <div>
       <div className='flex flex-col bg-white items-center justify-center pt-24 pb-24'>
@@ -21,7 +21,6 @@ const StepsHome = () => {
           {cardsData.map((card, index) => (
             <CardHome key={index} cardData={card} />
           ))}
-          
 
         </div>
 
@@ -45,8 +44,8 @@ const StepsHome = () => {
                 our goal is to inspire and support you every step of the way. Get ready to explore our virtual
                 garden and discover the joys of gardening with us!
               </p>
-              <Button>
-                See more photos
+              <Button> 
+                <a href="./NotFound"> See more photos</a>
               </Button>
             </div>
           </div>

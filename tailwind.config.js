@@ -18,6 +18,7 @@ export default {
         16: "1rem",
         20: "1.25rem",
         24: "1.5rem",
+        35: "2.1875rem",
         50: "3.125rem",
         64: "4rem",
       },
@@ -38,9 +39,39 @@ export default {
         cardAbout: "#D6EBDE",
         bgAbout: "#567361",
         greenHover: "#31C26D",
+        greenError: "#DCF0BB",
       },
       screens: {
         xl: "1535px",
+      },
+
+      animation: {
+        pop: "pop 0.6s ease-out",
+      },
+
+      pop: {
+        "0%": {
+          transform: "scale(1)",
+        },
+        "50%": {
+          transform: "scale(1.1)",
+        },
+        "100%": {
+          transform: "scale(1)",
+        },
+      },
+
+      backgroundImage: {
+        "error-page": "url('/src/assets/error/Rectangle 3.png')",
+      },
+
+      width: {
+        191: "11.9375rem",
+      },
+
+      height: {
+        52: "3.25rem",
+        62: "3.875rem",
       },
     },
   },

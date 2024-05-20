@@ -14,13 +14,13 @@ const Footer = () => {
           <div className=' ml-auto mt-[20px] md:mt-[174px] flex'>
             <ul className="mr-[8px] md:mr-[52px] space-y-[5px] md:space-y-[16px]">
               <h4 className='font-lato text-[12px] md:text-[24px]'>Links</h4>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/about-us" className='hover:text-green-500'>About Us</a></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/about/" className='hover:text-green-500'>About Us</a></li>
               <li className='font-raleway text-[10px] md:text-[16px]'><a href="/products" className='hover:text-green-500'>Products</a></li>
               <li className='font-raleway text-[10px] md:text-[16px]'><a href="/blogs" className='hover:text-green-500'>Blogs</a></li>
             </ul>
             <ul className='space-y-[5px] mr-[10px] md:space-y-[16px]'>
               <h4 className='font-lato text-[12px] md:text-[24px]'>Community</h4>
-              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/about-us" className='hover:text-green-500'>About Us</a></li>
+              <li className='font-raleway text-[10px] md:text-[16px]'><a href="/about/" className='hover:text-green-500'>About Us</a></li>
               <li className='font-raleway text-[10px] md:text-[16px]'><a href="/products" className='hover:text-green-500'>Products</a></li>
               <li className='font-raleway text-[10px] md:text-[16px]'><a href="/blogs" className='hover:text-green-500'>Blogs</a></li>
             </ul>

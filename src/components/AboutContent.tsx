@@ -33,7 +33,7 @@ const AboutContent: React.FC<AboutProps> = ({ aboutData }) => {
             <div className='px-10 py-6 lg:p-20'>
               <h2 className='font-lato font-bold text-black'>{title}</h2>
               <p className='font-raleway'>{subtitle}</p>
-              <h3 className='font-lato font-bold text-black mt-2'>Interesses e Hobbies</h3>
+              <h3 className='font-lato font-bold text-black mt-2'>Hobbies</h3>
               <ul className='font-raleway leading-relaxed text-justify'>
                 <li>{hobbies}</li>
               </ul>

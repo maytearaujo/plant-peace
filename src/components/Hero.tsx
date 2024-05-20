@@ -31,7 +31,6 @@ const Hero = () => {
           </div>
         </div>
 
-
       </div>
       <img src="../../src/assets/home/1discover/image.png" className="w-[50%] h-[100%] hidden mix-blend-luminosity md:flex flex-row" />
     </div>

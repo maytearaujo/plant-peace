@@ -24,7 +24,7 @@ const AboutContent: React.FC<AboutProps> = ({ aboutData }) => {
       <div className='flex flex-col md:flex md:flex-col  md:justify-center lg:flex lg:flex-row  lg:px-32 lg:py-20'>
         <div className='flex flex-col items-center justify-center content-center lg:justify-center lg:items-center'>
           <img className="w-48 md:w-56 mt-8 flex flex-col rounded-2xl border-2 border-black transition duration-300 ease-in-out hover:scale-110" src={image} alt="Profile" />
-          <iframe className=" md:w-80 mt-8 h-20 " src={spotify} ></iframe>
+          <iframe className="mt-8 h-20 " src={spotify} ></iframe>
         </div>
 
 

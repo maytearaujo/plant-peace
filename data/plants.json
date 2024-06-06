@@ -89,6 +89,42 @@
       "features": "Planta",
       "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
+    },
+    {
+      "id": "75f4d8fe-2b56-4c07-8cb7-e94f57c79df4",
+      "plantName": "Samambaia",
+      "plantSubtitle": "dfsdfmans",
+      "plantType": "nbmdnfbn",
+      "price": "R$100",
+      "discountPercentage": "10%",
+      "label": "outdoor",
+      "labelArray": [
+        {
+          "plantType": "nbmdnfbn",
+          "label": "outdoor"
+        }
+      ],
+      "features": "tttttttttttttttt",
+      "description": "tttttttttttt",
+      "imgUrl": "../src/assets/home/3this/photo1.png"
+    },
+    {
+      "id": "7c87f187-1657-4ba7-956d-3aae0f984a5a",
+      "plantName": "Samambaia",
+      "plantSubtitle": "Samambaia",
+      "plantType": "qqqqqq",
+      "price": "R$123",
+      "discountPercentage": "0%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "qqqqqq",
+          "label": "indoor"
+        }
+      ],
+      "features": "rrrrrrrrrrrr",
+      "description": "rrrrrrrrrr",
+      "imgUrl": "../src/assets/home/3this/photo1.png"
     }
   ]
 }

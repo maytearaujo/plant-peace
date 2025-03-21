@@ -107,6 +107,42 @@
       "features": "Zamiocuca",
       "description": "Zamiocuca",
       "imgUrl": "../src/assets/home/3this/photo1.png"
+    },
+    {
+      "id": "3c748c85-b6af-4c24-8de0-7556534bd3ff",
+      "plantName": "Pimenta",
+      "plantSubtitle": "Pimenta",
+      "plantType": "Pimenta",
+      "price": "R$123,13",
+      "discountPercentage": "12%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Pimenta",
+          "label": "indoor"
+        }
+      ],
+      "features": "PimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimenta",
+      "description": "PimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimenta",
+      "imgUrl": "../src/assets/home/3this/photo1.png"
+    },
+    {
+      "id": "ad44ead1-f7c8-4322-b798-eaf40c4031a1",
+      "plantName": "MelanciaMelanciaMelancia",
+      "plantSubtitle": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelancia",
+      "plantType": "Melancia",
+      "price": "R$123,13",
+      "discountPercentage": "12%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Melancia",
+          "label": "indoor"
+        }
+      ],
+      "features": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelancia",
+      "description": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciav",
+      "imgUrl": "../src/assets/home/3this/photo1.png"
     }
   ]
 }

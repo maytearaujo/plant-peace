@@ -1,4 +1,4 @@
-import { ChangeEvent, InputHTMLAttributes, TextareaHTMLAttributes } from 'react';
+import { InputHTMLAttributes, TextareaHTMLAttributes } from 'react';
 import '../styles.css';
 
 import { IMaskInput } from 'react-imask';

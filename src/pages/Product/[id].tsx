@@ -1,5 +1,5 @@
 import axios from 'axios';
-import productImage from '../../assets/home/3this/photo1.png'
+//import productImage from '../../assets/home/3this/photo1.png'
 import Button from '../../components/Button';
 import Tag from '../../components/Tag';
 

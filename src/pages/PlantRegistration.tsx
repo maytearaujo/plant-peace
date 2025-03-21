@@ -127,7 +127,8 @@ function PlantRegistration() {
       await validationSchema.validate(formData, { abortEarly: false });
       setErrors({});
 
-      const response = await axios.post('http://localhost:3000/plants', formData);
+      //const response = await axios.post('http://localhost:3000/plants', formData);
+      await axios.post('http://localhost:3000/plants', formData);
 
       toast.success('Plant registered successfully!');
 

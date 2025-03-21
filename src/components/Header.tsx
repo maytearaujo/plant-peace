@@ -1,4 +1,6 @@
 import Logo from "../assets/navbar/logo.png"
+import LogoUser from "../assets/navbar/logoUser.png"
+
 import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/clerk-react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
@@ -61,7 +63,7 @@ const Header = () => {
             <SignedOut>
               <SignInButton>
                 <button>
-                  <img src="/src/assets/navbar/logoUser.png" className="hover:w-[40px]" alt="" />
+                  <img src={LogoUser} className="hover:w-[40px]" alt="" />
                 </button>
               </SignInButton>
             </SignedOut>
@@ -91,7 +93,7 @@ const Header = () => {
           <SignedOut>
             <SignInButton>
               <button>
-                <img src="/src/assets/navbar/logoUser.png" className="hover:w-[40px]" alt="" />
+                <img src={LogoUser} className="hover:w-[40px]" alt="" />
               </button>
             </SignInButton>
           </SignedOut>

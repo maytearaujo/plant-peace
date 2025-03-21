@@ -74,8 +74,8 @@ Certifique-se de ter instalado em sua máquina:
 
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Link+do+o+trello)](https://git.io/typing-svg)
 
-Clique neste link para acessar nosso quadro no Trello:
-[aqui](https://trello.com/invite/b/pzxQKcWP/ATTIc90adc0cdd144ef7127ed3bc2ea4f8919B1D5CE6/desafio-2-jovemscript)
+Clique neste link para acessar nosso deploy:
+[aqui](https://plant-peace-xi.vercel.app/)
 
 ---
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&duration=3000&pause=500&color=78AC72&random=false&width=435&lines=Time+JovemScript)](https://git.io/typing-svg)

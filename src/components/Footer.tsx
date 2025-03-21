@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
+
 import logo from '../assets/footer/Group 26.png'
+import Line1 from '../assets/footer/Line1.png'
 
 const Footer = () => {
   return (
@@ -27,7 +29,7 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <img src="src/assets/footer/Line 1.png" className='' alt="" />
+        <img src={Line1} className='' alt="" />
         <div className='relative flex justify-between md:mt-[28px]'>
           <Link to='/' className='cursor-pointer w-fit hover:opacity-80 '>
             <img src={logo} className='w-[24px] mt-[10px] md:w-[54px]' alt="" />

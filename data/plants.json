@@ -89,6 +89,24 @@
       "features": "Planta",
       "description": "Planta",
       "imgUrl": "../src/assets/home/3this/photo1.png"
+    },
+    {
+      "id": "84eb945f-9d6d-435e-b628-cff97f1eb99c",
+      "plantName": "Zamiocuca",
+      "plantSubtitle": "Zamiocuca",
+      "plantType": "Zamiocuca",
+      "price": "R$123",
+      "discountPercentage": "12%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Zamiocuca",
+          "label": "indoor"
+        }
+      ],
+      "features": "Zamiocuca",
+      "description": "Zamiocuca",
+      "imgUrl": "../src/assets/home/3this/photo1.png"
     }
   ]
 }

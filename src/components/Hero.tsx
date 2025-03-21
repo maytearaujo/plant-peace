@@ -1,6 +1,7 @@
 import Rectangle from "../assets/home/1discover/rectangle.png"
 import Button from "../components/Button"
-import Arrow from "../../../assets/home/1discover/arrow.png"
+import Arrow from "../assets/home/1discover/arrow.png"
+import CostelaAdao from "../assets/home/1discover/arrow.png"
 
 import { Link } from 'react-router-dom'
 
@@ -33,7 +34,7 @@ const Hero = () => {
         </div>
 
       </div>
-      <img src="../../src/assets/home/1discover/image.png" className="w-[50%] h-[100%] hidden mix-blend-luminosity md:flex flex-row" />
+      <img src={CostelaAdao} className="w-[50%] h-[100%] hidden mix-blend-luminosity md:flex flex-row" />
     </div>
   )
 }

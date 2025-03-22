@@ -1,7 +1,7 @@
 import Rectangle from "../assets/home/1discover/rectangle.png"
+import LeftPlant from "../assets/home/1discover/leftPlant.png"
+import CostelaAdao from "../../src/assets/home/1discover/costelaAdao.png"
 import Button from "../components/Button"
-import Arrow from "../assets/home/1discover/arrow.png"
-import CostelaAdao from "../assets/home/1discover/arrow.png"
 
 import { Link } from 'react-router-dom'
 
@@ -25,11 +25,15 @@ const Hero = () => {
           </section>
         </div>
 
-        <div className="flex flex-row justify-items-start items-center w-[100%] h-[80%] bg-[url('../../src/assets/home/1discover/left_plant.png')] mix-blend-luminosity bg-no-repeat gap-2 bg-left">
+        {/* <div className="flex flex-row justify-items-start items-center w-[100%] h-[80%] bg-[url('../../src/assets/home/1discover/leftPlant.png')] mix-blend-luminosity bg-no-repeat gap-2 bg-left"> */}
+        <div 
+        className="flex flex-row justify-items-start items-center w-[100%] h-[80%] bg-no-repeat gap-2 bg-left" 
+        style={{ backgroundImage: `url(${LeftPlant})` }}
+      >
 
           <div className="flex flex-row justify-evenly items-center w-60 font-raleway pl-10 pt-10">
             <Link to="./NotFound" className="flex">Learn Gardening</Link>
-            <img src={Arrow} alt="" className="w-3 h-[0.8rem]" />
+            <img src="../../src/assets/home/1discover/arrow.png" alt="" className="w-3 h-[0.8rem]" />
           </div>
         </div>
 

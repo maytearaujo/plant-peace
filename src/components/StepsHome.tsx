@@ -1,6 +1,10 @@
 import Button from '../components/Button';
 import CardHome from '../components/CardHome';
 
+import Rectangle32 from '../assets/home/2steps/Rectangle 32.png';
+import Rectangle33 from '../assets/home/2steps/Rectangle 32.png';
+import Rectangle34 from '../assets/home/2steps/Rectangle 34.png';
+
 const StepsHome = () => {
   const cardsData = [
     { image: "/src/assets/home/2steps/Ellipse 3.png", title: 'Watering', subtitle: 'water your plants when the top inch of soil feels dry to the touch. Avoid overwatering, as it can lead to root  dehydration.' },
@@ -26,14 +30,14 @@ const StepsHome = () => {
         <div className="flex flex-wrap lg:flex-nowrap my-10 mx-6 pt-10">
           <div className="md:flex md:flex-col md:items-center xl:justify-center xl:gap-10 xl:mx-10 lg:mx-8 lg:flex-row lg:items-start" >
             <div className='w-full px-10 md:px-16 lg:w-1/3 mb-6 lg:mb-0 lg:pr-10 lg:px-0'>
-              <img className='w-full' src="/src/assets/home/2steps/Rectangle 32.png" alt="plant" />
+              <img className='w-full' src={Rectangle32} alt="plant" />
             </div>
             <div className='w-full px-10 md:px-16 lg:w-1/3 mb-6 lg:mb-0 lg:pr-10 lg:px-0'>
-              <img className='w-full' src="/src/assets/home/2steps/Rectangle 33.png" alt="plant" />
+              <img className='w-full' src={Rectangle33} alt="plant" />
             </div>
 
             <div className="w-full px-10 md:px-16 lg:w-1/3 flex flex-col lg:px-0 " >
-              <img src="/src/assets/home/2steps/Rectangle 34.png" alt="plant" className='w-full' />
+              <img src={Rectangle34} alt="plant" className='w-full' />
               <p className="mt-8 mb-8 text-left lg:text-14 text-secondarySecondary text-sm leading-relaxed">Our website offers a wide array of stunning plants, ranging from vibrant flowers to lush indoor foliage,
                 allowing you to create your very own green oasis. In addition to our extensive plant selection,
                 we also provide gardening kits and fertilizers to equip you with everything you need to nurture your plants and achieve gardening success.

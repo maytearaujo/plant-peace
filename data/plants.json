@@ -143,6 +143,24 @@
       "features": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelancia",
       "description": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciav",
       "imgUrl": "../src/assets/home/3this/photo1.png"
+    },
+    {
+      "id": "4cc0e807-6d00-45bb-b922-f39f970bf585",
+      "plantName": "afsdfas",
+      "plantSubtitle": "sdfsfa",
+      "plantType": "sdfas",
+      "price": "R$23",
+      "discountPercentage": "12%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "sdfas",
+          "label": "indoor"
+        }
+      ],
+      "features": "qwerqwe",
+      "description": "rqwerq",
+      "imgUrl": "../../assets/home/3this/photo1.png"
     }
   ]
 }

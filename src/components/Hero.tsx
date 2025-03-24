@@ -1,6 +1,6 @@
 import Rectangle from "../assets/home/1discover/rectangle.png"
 import LeftPlant from "../assets/home/1discover/leftPlant.png"
-import CostelaAdao from "../../src/assets/home/1discover/costelaAdao.png"
+import CostelaAdao from "../assets/home/1discover/costelaAdao.png"
 import Button from "../components/Button"
 
 import { Link } from 'react-router-dom'

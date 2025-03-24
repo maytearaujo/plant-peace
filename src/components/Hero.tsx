@@ -24,13 +24,12 @@ const Hero = () => {
             <h1 className="font-ebGaramond font-bold text-primaryLunarGreen text-[4rem] capitalize  leading-[5.2rem] md:text-64">Discover your <span className="text-primaryAvacado">green</span> side</h1>
             <p>We are your one-stop destination for all things green and growing. Our website offers a wide array of stunning plants, ranging from vibrant flowers  to lush indoor foliage, allowing you to create your very own green oasis.</p>
             <Button redirect="NotFound" children="Shop now" />
-
           </section>
         </div>
 
         {/* <div className="flex flex-row justify-items-start items-center w-[100%] h-[80%] bg-[url('../../src/assets/home/1discover/leftPlant.png')] mix-blend-luminosity bg-no-repeat gap-2 bg-left"> */}
         <div 
-        className="flex flex-row justify-items-start items-center w-[100%] h-[80%] bg-no-repeat gap-2 bg-left" 
+        className="flex flex-row justify-items-start items-center w-[95%] h-[80%] bg-no-repeat gap-2 bg-left" 
         style={{ backgroundImage: `url(${LeftPlant})` }}
       >
 

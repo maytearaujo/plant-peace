@@ -6,6 +6,9 @@ import axios from 'axios';
 import { v4 } from 'uuid';
 
 import { Toaster, toast } from 'react-hot-toast';
+
+import costelaAdao from '../assets/home/1discover/costelaAdao.png';
+
 interface FormData {
   id: string;
   plantName: string;
@@ -76,7 +79,7 @@ function PlantRegistration() {
     labelArray: [],
     features: '',
     description: '',
-    imgUrl: '../../assets/home/3this/photo1.png',
+    imgUrl: '../assets/home/3this/photo1.png',
   });
 
   const [errors, setErrors] = useState<ValidationErrors>({
@@ -144,7 +147,7 @@ function PlantRegistration() {
           labelArray: [],
           features: '',
           description: '',
-          imgUrl: '../../assets/home/3this/photo1.png',
+          imgUrl: '../assets/home/3this/photo1.png',
         }
       );
 
@@ -219,7 +222,7 @@ function PlantRegistration() {
           </Button>
         </form>
       </div>
-      <img src="../../../assets/home/1discover/image.png" className=" hidden w-[50%] h-[100vh] mix-blend-luminosity md:flex" />
+      <img src={costelaAdao} className=" hidden w-[40%] h-[100vh] mix-blend-luminosity md:flex" />
 
     </main>
   );

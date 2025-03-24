@@ -1,7 +1,10 @@
+import Button from "../components/Button"
+
+
 import Rectangle from "../assets/home/1discover/rectangle.png"
 import LeftPlant from "../assets/home/1discover/leftPlant.png"
 import CostelaAdao from "../assets/home/1discover/costelaAdao.png"
-import Button from "../components/Button"
+import Arrow from "../assets/home/1discover/arrow.png"
 
 import { Link } from 'react-router-dom'
 
@@ -33,7 +36,8 @@ const Hero = () => {
 
           <div className="flex flex-row justify-evenly items-center w-60 font-raleway pl-10 pt-10">
             <Link to="./NotFound" className="flex">Learn Gardening</Link>
-            <img src="../../src/assets/home/1discover/arrow.png" alt="" className="w-3 h-[0.8rem]" />
+            <img src={Arrow} alt="" className="w-3 h-[0.8rem]" />
+
           </div>
         </div>
 

@@ -4,12 +4,15 @@ import CardHome from '../components/CardHome';
 import Rectangle32 from '../assets/home/2steps/Rectangle 32.png';
 import Rectangle33 from '../assets/home/2steps/Rectangle 32.png';
 import Rectangle34 from '../assets/home/2steps/Rectangle 34.png';
+import Ellipse3 from '../assets/home/2steps/Ellipse 3.png';
+import Ellipse4 from '../assets/home/2steps/Ellipse 4.png';
+import Ellipse5 from '../assets/home/2steps/Ellipse 5.png';
 
 const StepsHome = () => {
   const cardsData = [
-    { image: "/src/assets/home/2steps/Ellipse 3.png", title: 'Watering', subtitle: 'water your plants when the top inch of soil feels dry to the touch. Avoid overwatering, as it can lead to root  dehydration.' },
-    { image: "/src/assets/home/2steps/Ellipse 4.png", title: 'Sunlight', subtitle: 'Most plants need adequate sunlight to thrive. Place your plants in areas that receive the appropriate amount of light for their specific needs' },
-    { image: "/src/assets/home/2steps/Ellipse 5.png", title: 'Nutrients and Fertilizing', subtitle: "Choose a suitable fertilizer based on the specific needs of your plants, whether it's a balanced or specialized formula." },
+    { image: Ellipse3, title: 'Watering', subtitle: 'water your plants when the top inch of soil feels dry to the touch. Avoid overwatering, as it can lead to root  dehydration.' },
+    { image: Ellipse4, title: 'Sunlight', subtitle: 'Most plants need adequate sunlight to thrive. Place your plants in areas that receive the appropriate amount of light for their specific needs' },
+    { image: Ellipse5, title: 'Nutrients and Fertilizing', subtitle: "Choose a suitable fertilizer based on the specific needs of your plants, whether it's a balanced or specialized formula." },
   ];
 
   return (

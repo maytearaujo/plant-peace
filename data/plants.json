@@ -16,7 +16,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "feb1cb6e-1749-4e39-874c-03019de762be",
@@ -34,7 +34,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../../assets/home/3this/photo1.png"
     },
     {
       "id": "e2bbf70f-a576-4892-82ec-ca67ec3fa824",
@@ -52,7 +52,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "61bba97b-0fe4-443e-982a-8e23f016b419",
@@ -70,7 +70,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../../assets/home/3this/photo1.png"
     },
     {
       "id": "15bb7135-59c3-45cb-9ba7-0bfa549ec6c6",
@@ -88,7 +88,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "84eb945f-9d6d-435e-b628-cff97f1eb99c",
@@ -106,7 +106,7 @@
       ],
       "features": "Zamiocuca",
       "description": "Zamiocuca",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "3c748c85-b6af-4c24-8de0-7556534bd3ff",
@@ -124,7 +124,7 @@
       ],
       "features": "PimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimenta",
       "description": "PimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimenta",
-      "imgUrl": "../src/assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "ad44ead1-f7c8-4322-b798-eaf40c4031a1",
@@ -142,7 +142,7 @@
       ],
       "features": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelancia",
       "description": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciav",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "4cc0e807-6d00-45bb-b922-f39f970bf585",
@@ -160,7 +160,7 @@
       ],
       "features": "qwerqwe",
       "description": "rqwerq",
-      "imgUrl": "../assets/home/3this/photo1.png"
+      "imgUrl": "../public/images/photo1.png"
     },
     {
       "id": "0fa4eee5-d854-4c69-a6f1-4df467489cd2",
@@ -178,6 +178,24 @@
       ],
       "features": "MargaridaMargaridaMargaridaMargaridaMargaridaMargarida",
       "description": "MargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargarida",
+      "imgUrl": "../public/images/photo1.png"
+    },
+    {
+      "id": "8eb36f2b-a2dc-43a4-8ae4-14cd6b46267f",
+      "plantName": "Peixinho",
+      "plantSubtitle": "Peixinho",
+      "plantType": "Peixinho",
+      "price": "R$123",
+      "discountPercentage": "12%",
+      "label": "outdoor",
+      "labelArray": [
+        {
+          "plantType": "Peixinho",
+          "label": "outdoor"
+        }
+      ],
+      "features": "PeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinho",
+      "description": "PeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinho",
       "imgUrl": "../assets/home/3this/photo1.png"
     }
   ]

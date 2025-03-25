@@ -24,7 +24,7 @@
       "plantSubtitle": "Flor de lotus",
       "plantType": "Flor de lotus",
       "price": "R$700,00",
-      "discountPercentage": "50%",
+      "discountPercentage": "0%",
       "label": "indoor",
       "labelArray": [
         {
@@ -42,7 +42,7 @@
       "plantSubtitle": "Girassol",
       "plantType": "Girassol",
       "price": "R$700,00",
-      "discountPercentage": "20%",
+      "discountPercentage": "0%",
       "label": "outdoor",
       "labelArray": [
         {
@@ -60,7 +60,7 @@
       "plantSubtitle": "Dracenas",
       "plantType": "Dracenas",
       "price": "R$100,00",
-      "discountPercentage": "10%",
+      "discountPercentage": "0%",
       "label": "indoor",
       "labelArray": [
         {
@@ -196,6 +196,24 @@
       ],
       "features": "PeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinho",
       "description": "PeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinhoPeixinho",
+      "imgUrl": "../assets/home/3this/photo1.png"
+    },
+    {
+      "id": "12a3bfaf-1c46-40ee-995d-13f818aa8361",
+      "plantName": "rrrr",
+      "plantSubtitle": "rrrrrrrrrrrr",
+      "plantType": "rr",
+      "price": "R$455",
+      "discountPercentage": "0%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "rr",
+          "label": "indoor"
+        }
+      ],
+      "features": "ttttttttttttttttt",
+      "description": "ttttttttttttt",
       "imgUrl": "../assets/home/3this/photo1.png"
     }
   ]

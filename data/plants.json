@@ -16,7 +16,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "feb1cb6e-1749-4e39-874c-03019de762be",
@@ -52,7 +52,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "61bba97b-0fe4-443e-982a-8e23f016b419",
@@ -88,7 +88,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "84eb945f-9d6d-435e-b628-cff97f1eb99c",
@@ -106,7 +106,7 @@
       ],
       "features": "Zamiocuca",
       "description": "Zamiocuca",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "3c748c85-b6af-4c24-8de0-7556534bd3ff",
@@ -124,7 +124,7 @@
       ],
       "features": "PimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimenta",
       "description": "PimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimentaPimenta",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "ad44ead1-f7c8-4322-b798-eaf40c4031a1",
@@ -142,7 +142,7 @@
       ],
       "features": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelancia",
       "description": "MelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciaMelanciav",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "4cc0e807-6d00-45bb-b922-f39f970bf585",
@@ -160,7 +160,7 @@
       ],
       "features": "qwerqwe",
       "description": "rqwerq",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "0fa4eee5-d854-4c69-a6f1-4df467489cd2",
@@ -178,7 +178,7 @@
       ],
       "features": "MargaridaMargaridaMargaridaMargaridaMargaridaMargarida",
       "description": "MargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargaridaMargarida",
-      "imgUrl": "../public/images/photo1.png"
+      "imgUrl": "/images/photo1.png"
     },
     {
       "id": "8eb36f2b-a2dc-43a4-8ae4-14cd6b46267f",

@@ -45,7 +45,7 @@ function Product() {
   return (
     <div className="flex w-screen justify-center items-center h-full mt-[141px] mb-[141px]">
       <div className="max-w-[1535px] w-full flex gap-[82px] my-[100px] mx-[100px] flex-wrap justify-center">
-        <img src={product.imgUrl} alt="Product image" className='max-w-[752px] w-full max-h-[690px] flex' />
+        <img src={product.imgUrl} alt="Product Image" className='max-w-[752px] w-full max-h-[690px] flex' />
 
 
         <section className='flex flex-col gap-6 w-[701px]'>

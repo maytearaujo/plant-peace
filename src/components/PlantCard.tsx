@@ -40,7 +40,7 @@ const PlantCard = ({ id, plantName, price, discountPrice, label, ...rest }: Plan
 
     return (
         <div className='flex flex-col max-w-[389px] my-24 drop-shadow-md cursor-pointer' onClick={handleNavigate} {...rest}>
-            <img className='opacity-75 hover:opacity-100' src={imagensJSON.plants[0]?.imgUrl} alt={plantName} />
+            <img className='opacity-75 hover:opacity-100' src={imagensJSON.plants[1]?.imgUrl} alt={plantName} />
 
             <div className='flex flex-col gap-6 bg-white px-8 pb-8 pt-4'>
                 <div>

@@ -5,7 +5,7 @@ import aleImg from '../../assets/about/ale.jpg';
 import rebecaImg from '../../assets/about/beca.jpg';
 import dudaImg from '../../assets/about/MariaEduarda.jpg';
 import vitorImg from '../../assets/about/vitor.jpg';
-import planta from '../../assets/home/3this/photo4.png';
+import planta from '../../assets/home/3this/cacto.png';
 
 
 const About = () => {

@@ -16,7 +16,61 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "/images/cacto.png"
+      "imgUrl": "../src/assets/home/3this/cacto.png"
+    },
+    {
+      "id": "e2bbf70f-a576-4892-82ec-ca67ec3fa824",
+      "plantName": "Costela de Adão",
+      "plantSubtitle": "Costela de Adão",
+      "plantType": "Verde",
+      "price": "R$150,00",
+      "discountPercentage": "10%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Verde",
+          "label": "indoor"
+        }
+      ],
+      "features": "Planta",
+      "description": "Planta",
+      "imgUrl": "../src/assets/home/3this/costela.png"
+    },
+    {
+      "id": "942b5c1a-1234-5678-90ab-cdef12345678",
+      "plantName": "Cacto Bola",
+      "plantSubtitle": "Cacto Bola",
+      "plantType": "Cacto",
+      "price": "R$120,00",
+      "discountPercentage": "5%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Cacto",
+          "label": "indoor"
+        }
+      ],
+      "features": "Planta",
+      "description": "Planta",
+      "imgUrl": "../src/assets/home/3this/cacto_bola.png"
+    },
+    {
+      "id": "a123b456-7890-1234-5678-90abcdef1234",
+      "plantName": "Peperomia",
+      "plantSubtitle": "Peperomia",
+      "plantType": "Verde",
+      "price": "R$80,00",
+      "discountPercentage": "0%",
+      "label": "indoor",
+      "labelArray": [
+        {
+          "plantType": "Verde",
+          "label": "indoor"
+        }
+      ],
+      "features": "Planta",
+      "description": "Planta",
+      "imgUrl": "../src/assets/home/3this/peperomia.png"
     },
     {
       "id": "feb1cb6e-1749-4e39-874c-03019de762be",
@@ -34,7 +88,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "/images/flor-lotus.jpg"
+      "imgUrl": "../src/assets/home/3this/flor-lotus.jpg"
     },
     {
       "id": "e2bbf70f-a576-4892-82ec-ca67ec3fa824",
@@ -52,7 +106,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "/images/photo1.png"
+      "imgUrl": "../src/assets/home/3this/girassol.jpg"
     },
     {
       "id": "61bba97b-0fe4-443e-982a-8e23f016b419",
@@ -70,43 +124,7 @@
       ],
       "features": "Planta",
       "description": "Planta",
-      "imgUrl": "../../assets/home/3this/photo1.png"
-    },
-    {
-      "id": "7105db8a-f23a-44bc-a238-ec3184f88b47",
-      "plantName": "Cacto",
-      "plantSubtitle": "Cacto",
-      "plantType": "Cacto",
-      "price": "R$100,00",
-      "discountPercentage": "0%",
-      "label": "indoor",
-      "labelArray": [
-        {
-          "plantType": "Cacto",
-          "label": "indoor"
-        }
-      ],
-      "features": "Planta",
-      "description": "Planta",
-      "imgUrl": "/images/photo1.png"
-    },
-    {
-      "id": "e2bbf70f-a577-4892-82ec-ca67ec3fa824",
-      "plantName": "Girassol",
-      "plantSubtitle": "Girassol",
-      "plantType": "Girassol",
-      "price": "R$700,00",
-      "discountPercentage": "0%",
-      "label": "outdoor",
-      "labelArray": [
-        {
-          "plantType": "Girassol",
-          "label": "outdoor"
-        }
-      ],
-      "features": "Planta",
-      "description": "Planta",
-      "imgUrl": "/images/photo1.png"
+      "imgUrl": "../src/assets/home/3this/dracena.png"
     },
     {
       "id": "942b5c1a-1234-5678-90ab-cdef12345678",
@@ -124,7 +142,7 @@
       ],
       "features": "Perfume agradável",
       "description": "A rosa vermelha é um símbolo de amor e paixão.",
-      "imgUrl": "/images/rosa.jpg"
+      "imgUrl": "../src/assets/home/3this/rosas.jpg"
     },
     {
       "id": "a123b456-7890-1234-5678-90abcdef1234",
@@ -142,7 +160,7 @@
       ],
       "features": "Flor delicada",
       "description": "A orquídea branca é conhecida por sua beleza e elegância.",
-      "imgUrl": "/images/orquidea.jpg"
+      "imgUrl": "../src/assets/home/3this/orquidea.jpg"
     },
     {
       "id": "b234c567-8901-2345-6789-0abcdef12345",
@@ -160,7 +178,7 @@
       ],
       "features": "Fácil cuidado",
       "description": "A samambaia é uma planta popular para interiores.",
-      "imgUrl": "/images/samambaia.jpg"
+      "imgUrl": "../src/assets/home/3this/samambaia.jpg"
     },
     {
       "id": "c345d678-9012-3456-7890-abcdef123456",
@@ -178,7 +196,7 @@
       ],
       "features": "Armazena água",
       "description": "Suculentas são plantas resistentes que armazenam água.",
-      "imgUrl": "/images/suculenta.jpg"
+      "imgUrl": "../src/assets/home/3this/suculenta.jpg"
     },
     {
       "id": "d456e789-0123-4567-8901-abcdef1234567",
@@ -196,7 +214,7 @@
       ],
       "features": "Flor perfumada",
       "description": "O lírio branco simboliza pureza e elegância.",
-      "imgUrl": "/images/lirio.jpg"
+      "imgUrl": "../src/assets/home/3this/lirio.jpg"
     },
     {
       "id": "e567f890-1234-5678-9012-abcdef12345678",

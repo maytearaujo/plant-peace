@@ -46,6 +46,7 @@ function AllProducts() {
           price={plant.price}
           discountPrice={plant.discountPercentage}
           label={plant.label}
+          imgUrl={plant.imgUrl}
           className="flex flex-col max-w-[389px] my-6 drop-shadow-md cursor-pointer"
         />
       ))}

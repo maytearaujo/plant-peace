@@ -103,7 +103,7 @@ const Carousel = ({ margin, isInSale }: CarouselProps) => {
                   price={item.price}
                   discountPrice={item.discountPercentage.toString()}
                   label={item.labelArray[0].label}
-                />
+                  imgUrl={item.imgUrl}                />
               </SwiperSlide>
             )) : plantsWithoutDiscount.length > 0 && plantsWithoutDiscount.map((item) => (
               <SwiperSlide key={item.id}>
@@ -112,7 +112,7 @@ const Carousel = ({ margin, isInSale }: CarouselProps) => {
                   plantName={item.plantName}
                   price={item.price}
                   label={item.labelArray[0].label}
-                />
+                  imgUrl={item.imgUrl}                />
               </SwiperSlide>
             ))}
           </Swiper>

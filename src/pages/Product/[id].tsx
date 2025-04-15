@@ -33,7 +33,7 @@ function Product() {
       try {
         const response = await axios.get(`http://localhost:3000/plants/${id}`);
         setProduct(response.data);
-        console.log(response.data);
+        // console.log(response.data);
       } catch (error) {
         console.error(error);
       }
@@ -75,15 +75,11 @@ function Product() {
           <ul className="pl-2 list-none p-0 m-0">
             <li className="relative text-sm flex items-center">
               <span className="inline-block mr-2 text-xs leading-none">•</span>
-              <p className='font-raleway'>{product.features}</p>
+              <p className='font-raleway'>{product.label}</p>
             </li>
             <li className="relative text-sm flex items-center">
               <span className="inline-block mr-2 text-xs leading-none">•</span>
-              <p className='font-raleway'>{product.features}</p>
-            </li>
-            <li className="relative text-sm flex items-center">
-              <span className="inline-block mr-2 text-xs leading-none">•</span>
-              <p className='font-raleway'>{product.features}</p>
+              <p className='font-raleway'>Discount: {product.discountPercentage}%</p>
             </li>
             <li className="relative text-sm flex items-center">
               <span className="inline-block mr-2 text-xs leading-none">•</span>

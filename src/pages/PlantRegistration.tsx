@@ -22,6 +22,7 @@ interface FormData {
   description: string;
   imgUrl: string;
 }
+
 interface ValidationErrors {
   id?: string;
   plantName?: string;
@@ -148,7 +149,6 @@ function PlantRegistration() {
           features: '',
           description: '',
           imgUrl: '../assets/home/3this/photo1.png',
-          //imgUrl: '../assets/home/3this/photo1.png',
         }
       );
 

@@ -4,8 +4,6 @@ import 'swiper/css/pagination';
 
 import { useNavigate } from 'react-router-dom';
 
-import imagensJSON from '../../data/plants.json'; // Importando o JSON
-
 import Tag from './Tag';
 import { HTMLAttributes, useEffect, useState } from 'react';
 
@@ -41,9 +39,8 @@ const PlantCard = ({ id, plantName, price, discountPrice, label, imgUrl, ...rest
 
     return (
         <div className='flex flex-col max-w-[389px] my-24 drop-shadow-md cursor-pointer' onClick={handleNavigate} {...rest}>
-            {/* <img className='opacity-75 hover:opacity-100' src={imagensJSON.plants[0]?.imgUrl} alt={plantName} /> */}
             <img className='opacity-75 hover:opacity-100' src={imgUrl} alt={plantName} />
-
+<h3>Pant card</h3>
             <div className='flex flex-col gap-6 bg-white px-8 pb-8 pt-4'>
                 <div>
                     <h3 className='text-primaryLunarGreen font-lato font-bold text-2xl mb-1'>{plantName}</h3>

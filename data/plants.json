@@ -1,6 +1,24 @@
 {
   "plants": [
     {
+      "id": "7105dc8a-f20a-44bc-a238-ec3184f88b47",
+      "plantName": "plantName",
+      "plantSubtitle": "plantSubtitle",
+      "plantType": "plantType",
+      "price": "price",
+      "discountPercentage": "discountPercentage",
+      "label": "label",
+      "labelArray": [
+        {
+          "plantType": "labelArray plantType",
+          "label": "labelArray label"
+        }
+      ],
+      "features": "features",
+      "description": "description",
+      "imgUrl": "../src/assets/home/3this/cacto.png"
+    },
+    {
       "id": "7105db8a-f20a-44bc-a238-ec3184f88b47",
       "plantName": "Cacto",
       "plantSubtitle": "Cacto",
@@ -14,8 +32,8 @@
           "label": "indoor"
         }
       ],
-      "features": "Planta",
-      "description": "Planta",
+      "features": "Planta de ramos longos, suculentos",
+      "description": "Folhas fotossintéticas e os caules curtos",
       "imgUrl": "../src/assets/home/3this/cacto.png"
     },
     {
@@ -32,7 +50,7 @@
           "label": "indoor"
         }
       ],
-      "features": "Planta",
+      "features": "Planta Costela de Adão",
       "description": "Planta",
       "imgUrl": "../src/assets/home/3this/costela.png"
     },
@@ -127,7 +145,7 @@
       "imgUrl": "../src/assets/home/3this/dracena.png"
     },
     {
-      "id": "942b5c1a-1234-5678-90ab-cdef12345678",
+      "id": "942b4c1a-1234-5678-90ab-cdef12345678",
       "plantName": "Rosa",
       "plantSubtitle": "Rosa Vermelha",
       "plantType": "Flor",

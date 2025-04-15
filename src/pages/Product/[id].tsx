@@ -79,7 +79,7 @@ function Product() {
             </li>
             <li className="relative text-sm flex items-center">
               <span className="inline-block mr-2 text-xs leading-none">•</span>
-              <p className='font-raleway'>Discount: {product.discountPercentage}%</p>
+              <p className='font-raleway'>Discount: {product.discountPercentage}</p>
             </li>
             <li className="relative text-sm flex items-center">
               <span className="inline-block mr-2 text-xs leading-none">•</span>

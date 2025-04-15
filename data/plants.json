@@ -1,24 +1,6 @@
 {
   "plants": [
     {
-      "id": "7105dc8a-f20a-44bc-a238-ec3184f88b47",
-      "plantName": "plantName",
-      "plantSubtitle": "plantSubtitle",
-      "plantType": "plantType",
-      "price": "price",
-      "discountPercentage": "discountPercentage",
-      "label": "label",
-      "labelArray": [
-        {
-          "plantType": "labelArray plantType",
-          "label": "labelArray label"
-        }
-      ],
-      "features": "features",
-      "description": "description",
-      "imgUrl": "../src/assets/home/3this/cacto.png"
-    },
-    {
       "id": "7105db8a-f20a-44bc-a238-ec3184f88b47",
       "plantName": "Cacto",
       "plantSubtitle": "Cacto",

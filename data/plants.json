@@ -16,7 +16,7 @@
       ],
       "features": "Planta de ramos longos, suculentos",
       "description": "Folhas fotossintéticas e os caules curtos",
-      "imgUrl": "/cacto.png"
+      "imgUrl": "/public/assets/img/cacto.png"
     },
     {
       "id": "e2bbf70f-a576-4892-82ec-ca67ec3fa824",

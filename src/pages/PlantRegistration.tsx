@@ -2,12 +2,13 @@ import { ChangeEvent, FormEvent, FocusEvent, useState } from 'react';
 import Button from "../components/Button";
 import { Input, TextArea } from "../components/Input";
 import * as Yup from 'yup';
-import axios from 'axios';
+// import axios from 'axios';
 import { v4 } from 'uuid';
 
 import { Toaster, toast } from 'react-hot-toast';
 
 import costelaAdao from '../assets/home/1discover/costelaAdao.png';
+import { api } from '../services/Services';
 
 interface FormData {
   id: string;
@@ -132,7 +133,7 @@ function PlantRegistration() {
       setErrors({});
 
       //const response = await axios.post('http://localhost:3000/plants', formData);
-      await axios.post('http://localhost:3000/plants', formData);
+      await api.post('/plants', formData);
 
       toast.success('Plant registered successfully!');
 
@@ -154,10 +155,23 @@ function PlantRegistration() {
 
     } catch (err: any) {
       const validationErrors: ValidationErrors = {};
-      err.inner.forEach((error: Yup.ValidationError) => {
-        validationErrors[error.path as keyof FormData] = error.message;
-      });
-      setErrors(validationErrors);
+
+      // err.inner.forEach((error: Yup.ValidationError) => {
+      //   validationErrors[error.path as keyof FormData] = error.message;
+      // });
+      // setErrors(validationErrors);
+
+
+      if (err.name === 'ValidationError' && Array.isArray(err.inner)) {
+        err.inner.forEach((error: Yup.ValidationError) => {
+          validationErrors[error.path as keyof FormData] = error.message
+        })
+        setErrors(validationErrors)
+      } else {
+        // Erro de API ou outro tipo
+        toast.error('Erro ao cadastrar a planta. Verifique a API.')
+        console.error('Erro:', err)
+      }
     }
   };
 

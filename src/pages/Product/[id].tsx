@@ -1,4 +1,4 @@
-import axios from 'axios';
+// import axios from 'axios';
 //import productImage from '../../assets/home/3this/photo1.png'
 import Button from '../../components/Button';
 import Tag from '../../components/Tag';
@@ -7,6 +7,7 @@ import {
   useParams
 } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import { api } from '../../services/Services';
 
 type Product = {
   id: string;
@@ -31,7 +32,7 @@ function Product() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:3000/plants/${id}`);
+        const response = await api.get(`/plants/${id}`);
         setProduct(response.data);
         // console.log(response.data);
       } catch (error) {

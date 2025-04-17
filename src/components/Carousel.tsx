@@ -2,7 +2,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import PlantCard from './PlantCard.tsx';
 import { useEffect, useState } from 'react';
-import axios from 'axios';
+import {api} from '../services/Services.ts'
 
 type Plant = {
   id: string;
@@ -43,7 +43,8 @@ const Carousel = ({ margin, isInSale }: CarouselProps) => {
   useEffect(() => {
     const fetchPlants = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/plants');
+        // const response = await axios.get('http://localhost:3000/plants');
+        const response = await api.get('/plants');
         setPlants(response.data);
       } catch (error) {
         console.error(error);

@@ -1,6 +1,7 @@
-import axios from "axios";
+// import axios from "axios";
 import { useEffect, useState } from "react"
 import PlantCard from "../components/PlantCard";
+import { api } from "../services/Services";
 
 type Plant = {
   id: string;
@@ -26,7 +27,7 @@ function AllProducts() {
   useEffect(() => {
     const fetchPlants = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/plants');
+        const response = await api.get('/plants');
         setPlants(response.data);
       } catch (error) {
         console.error(error);

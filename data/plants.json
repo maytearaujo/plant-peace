@@ -16,7 +16,7 @@
       ],
       "features": "Planta de ramos longos, suculentos",
       "description": "Folhas fotossintéticas e os caules curtos",
-      "imgUrl": "../public/cacto.png"
+      "imgUrl": "/cacto.png"
     },
     {
       "id": "e2bbf70f-a576-4892-82ec-ca67ec3fa824",
@@ -34,7 +34,7 @@
       ],
       "features": "Planta Costela de Adão",
       "description": "Planta",
-      "imgUrl": "../public/costela.png"
+      "imgUrl": "../costela.png"
     },
     {
       "id": "942b5c1a-1234-5678-90ab-cdef12345678",

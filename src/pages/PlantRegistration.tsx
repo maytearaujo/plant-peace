@@ -81,7 +81,7 @@ function PlantRegistration() {
     labelArray: [],
     features: '',
     description: '',
-    imgUrl: '../assets/home/3this/photo2.png',
+    imgUrl: '/img/photo.png',
   });
 
   const [errors, setErrors] = useState<ValidationErrors>({
@@ -149,7 +149,7 @@ function PlantRegistration() {
           labelArray: [],
           features: '',
           description: '',
-          imgUrl: '../assets/home/3this/photo1.png',
+          imgUrl: '/img/photo.png',
         }
       );
 

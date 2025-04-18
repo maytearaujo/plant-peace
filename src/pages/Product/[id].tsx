@@ -3,9 +3,8 @@
 import Button from '../../components/Button';
 import Tag from '../../components/Tag';
 
-import {
-  useParams
-} from 'react-router-dom'
+import { useParams } from 'react-router-dom'
+// const { id } = useParams();
 import { useEffect, useState } from 'react';
 import { api } from '../../services/Services';
 
@@ -29,20 +28,37 @@ function Product() {
 
   const [product, setProduct] = useState({} as Product);
 
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const response = await api.get(`/plants/${id}`);
+  //       setProduct(response.data);
+  //       console.log(response.data);
+  //     } catch (error) {
+  //       console.error(error);
+  //     }
+  //   };
+
+  //   fetchData();
+  // }, [id]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await api.get(`/plants/${id}`);
-        setProduct(response.data);
-        // console.log(response.data);
+        const response = await api.get('/plants');
+        const foundProduct = response.data.find((p: Product) => p.id === id);
+        if (foundProduct) {
+          setProduct(foundProduct);
+        } else {
+          console.error('Produto não encontrado');
+        }
       } catch (error) {
-        console.error(error);
+        console.error('Erro ao buscar dados:', error);
       }
     };
-
+  
     fetchData();
   }, [id]);
-
+  
   return (
     <div className="flex w-screen justify-center items-center h-full mt-[141px] mb-[141px]">
       <div className="max-w-[1535px] w-full flex gap-[82px] my-[100px] mx-[100px] flex-wrap justify-center">
@@ -99,4 +115,3 @@ function Product() {
 }
 
 export default Product;
-

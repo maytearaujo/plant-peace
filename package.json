@@ -23,7 +23,7 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-imask": "^7.6.0",
-    "react-router-dom": "^6.30.3",
+    "react-router-dom": "^7.18.1",
     "sort-by": "^0.0.2",
     "swiper": "^12.1.2",
     "uuid": "^14.0.0",
